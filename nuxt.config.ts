@@ -15,6 +15,15 @@ export default defineNuxtConfig({
   buildModules: [
     '~/modules/google-fonts',
   ],
+  modules: ['@formkit/nuxt'],
+  css: [
+    "~/assets/css/tailwind.css"
+  ],
+  meta: {
+    meta: [
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+    ],
+  },
   googleFonts: {
     display: 'swap',
     useStylesheet: true,
@@ -23,12 +32,4 @@ export default defineNuxtConfig({
       'Poppins': [100, 400, 600]
     }
   },
-  css: [
-    "~/assets/css/tailwind.css"
-  ],
-  meta: {
-    meta: [
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' }
-    ],
-  }
 })

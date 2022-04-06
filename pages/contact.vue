@@ -13,6 +13,10 @@
           Drop me a line
         </h1>
       </s-container>
+
+      <s-container class="pb-32">
+        <contact-form />
+      </s-container>
     </main>
 
     <s-footer />

@@ -17,7 +17,8 @@ export default defineNuxtConfig({
   ],
   modules: ['@formkit/nuxt'],
   css: [
-    "~/assets/css/tailwind.css"
+    "assets/css/tailwind.css",
+    "assets/css/global.css"
   ],
   meta: {
     meta: [

@@ -10,7 +10,7 @@
       v-model="email"
       name="email"
       label="Your email"
-      validation="required|*email"
+      validation="required|email"
     />
     <s-form-textarea
       v-model="message"

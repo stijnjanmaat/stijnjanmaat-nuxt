@@ -7,7 +7,11 @@ export default function (name: string): { handleFocus: FocusFunc, focusClass: Re
 
   onMounted(() => {
     const node = getNode(name);
-    node.context.handlers.blur = handleBlur;
+    const originalBlur = node.context.handlers.blur;
+    node.context.handlers.blur = () => {
+      handleBlur();
+      originalBlur();
+    }
   })
 
   const handleBlur = (): void => {

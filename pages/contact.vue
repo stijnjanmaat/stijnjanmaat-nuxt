@@ -17,6 +17,12 @@
       <s-container class="pb-32">
         <contact-form />
       </s-container>
+
+      <s-container class="pb-32">
+        <p class="text-white text-lg">
+          Or you just email me @ <a href="mailto:stijn@stijnjanmaat.nl">stijn@stijnjanmaat.nl</a>.
+        </p>
+      </s-container>
     </main>
 
     <s-footer />

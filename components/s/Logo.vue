@@ -1,7 +1,7 @@
 <template>
   <nuxt-link
     to="/"
-    class="hover:text-white transition ease-in-out"
+    class="hover:text-white transition ease-in-out no-underline"
   >
     <strong>stijnjanmaat</strong>.nl
   </nuxt-link>

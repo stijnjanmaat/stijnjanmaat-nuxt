@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "dev": "nuxi dev",
+    "dev": "nuxi dev --port=3344",
     "build": "nuxi build",
     "start": "node .output/server/index.mjs"
   },
@@ -25,6 +25,8 @@
     "@formkit/nuxt": "^1.0.0-beta.6",
     "@nuxt/kit": "npm:@nuxt/kit-edge@latest",
     "@vueuse/core": "^8.2.3",
-    "google-fonts-helper": "^2.0.1"
+    "formdata-node": "^4.3.2",
+    "google-fonts-helper": "^2.0.1",
+    "mailgun.js": "^5.0.5"
   }
 }

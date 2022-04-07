@@ -51,8 +51,7 @@ export default defineNuxtModule({
     })
 
     // merge fonts from valid head link
-    // @ts-ignore
-    const fontsParsed = (nuxt.options.meta.link || []).filter(link => GoogleFontsHelper.isValidURL(link.href)).map(link => GoogleFontsHelper.parse(link.href))
+    const fontsParsed = (nuxt.options.head.link || []).filter(link => GoogleFontsHelper.isValidURL(link.href)).map(link => GoogleFontsHelper.parse(link.href))
 
     if (fontsParsed.length) {
       googleFontsHelper.merge(...fontsParsed)
@@ -68,8 +67,7 @@ export default defineNuxtModule({
     }
 
     // remove fonts
-    // @ts-ignore
-    nuxt.options.meta.link = (nuxt.options.meta.link || []).filter(link => !GoogleFontsHelper.isValidURL(link.href))
+    nuxt.options.head.link = (nuxt.options.head.link || []).filter(link => !GoogleFontsHelper.isValidURL(link.href))
 
     // download
     if (options.download) {
@@ -98,8 +96,7 @@ export default defineNuxtModule({
 
     // https://developer.mozilla.org/en-US/docs/Web/Performance/dns-prefetch
     if (options.prefetch) {
-      // @ts-ignore
-      nuxt.options.meta.link.push({
+      nuxt.options.head.link.push({
         hid: 'gf-prefetch',
         rel: 'dns-prefetch',
         href: 'https://fonts.gstatic.com/'
@@ -109,8 +106,7 @@ export default defineNuxtModule({
     // https://developer.mozilla.org/en-US/docs/Web/Performance/dns-prefetch#Best_practices
     // connect to domain of font files
     if (options.preconnect) {
-      // @ts-ignore
-      nuxt.options.meta.link.push({
+      nuxt.options.head.link.push({
         hid: 'gf-preconnect',
         rel: 'preconnect',
         href: 'https://fonts.gstatic.com/',
@@ -121,8 +117,7 @@ export default defineNuxtModule({
     // https://developer.mozilla.org/pt-BR/docs/Web/HTML/Preloading_content
     // optionally increase loading priority
     if (options.preload) {
-      // @ts-ignore
-      nuxt.options.meta.link.push({
+      nuxt.options.head.link.push({
         hid: 'gf-preload',
         rel: 'preload',
         as: 'style',
@@ -132,8 +127,7 @@ export default defineNuxtModule({
 
     // append CSS
     if (options.useStylesheet) {
-      // @ts-ignore
-      nuxt.options.meta.link.push({
+      nuxt.options.head.link.push({
         hid: 'gf-style',
         rel: 'stylesheet',
         href: url
@@ -143,29 +137,22 @@ export default defineNuxtModule({
     }
 
     // JS to inject CSS
-    // @ts-ignore
-    nuxt.options.meta.script = nuxt.options.meta.script || []
-    // @ts-ignore
-    nuxt.options.meta.script.push({
+    nuxt.options.head.script = nuxt.options.head.script || []
+    nuxt.options.head.script.push({
       hid: 'gf-script',
       innerHTML: `(function(){var l=document.createElement('link');l.rel="stylesheet";l.href="${url}";document.querySelector("head").appendChild(l);})();`
     })
 
     // no-JS fallback
-    // @ts-ignore
-    nuxt.options.meta.noscript = nuxt.options.meta.noscript || []
-    // @ts-ignore
-    nuxt.options.meta.noscript.push({
+    nuxt.options.head.noscript = nuxt.options.head.noscript || []
+    nuxt.options.head.noscript.push({
       hid: 'gf-noscript',
       innerHTML: `<link rel="stylesheet" href="${url}">`
     })
 
     // Disable sanitazions
-    // @ts-ignore
-    nuxt.options.meta.__dangerouslyDisableSanitizersByTagID = nuxt.options.meta.__dangerouslyDisableSanitizersByTagID || {}
-    // @ts-ignore
-    nuxt.options.meta.__dangerouslyDisableSanitizersByTagID['gf-script'] = ['innerHTML']
-    // @ts-ignore
-    nuxt.options.meta.__dangerouslyDisableSanitizersByTagID['gf-noscript'] = ['innerHTML']
+    nuxt.options.head.__dangerouslyDisableSanitizersByTagID = nuxt.options.head.__dangerouslyDisableSanitizersByTagID || {}
+    nuxt.options.head.__dangerouslyDisableSanitizersByTagID['gf-script'] = ['innerHTML']
+    nuxt.options.head.__dangerouslyDisableSanitizersByTagID['gf-noscript'] = ['innerHTML']
   }
 })

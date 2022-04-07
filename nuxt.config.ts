@@ -17,10 +17,10 @@ export default defineNuxtConfig({
   ],
   modules: ['@formkit/nuxt'],
   css: [
-    "assets/css/tailwind.css",
-    "assets/css/global.css"
+    'assets/css/tailwind.css',
+    'assets/css/global.css'
   ],
-  meta: {
+  head: {
     meta: [
       { name: 'viewport', content: 'width=device-width, initial-scale=1' }
     ],

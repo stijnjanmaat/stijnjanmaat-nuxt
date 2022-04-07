@@ -7,7 +7,6 @@
     <span class="relative inline-block px-6 py-4 bg-white text-xl font-bold text-purple-900 z-1">
       <slot />
     </span>
-    
   </nuxt-link>
 </template>
 
@@ -19,7 +18,7 @@ interface Props {
   disabled?: boolean
 }
 
-const props = withDefaults(defineProps<Props>(), {
+withDefaults(defineProps<Props>(), {
   disabled: false,
 });
 </script>

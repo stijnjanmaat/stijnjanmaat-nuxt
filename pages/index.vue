@@ -104,7 +104,7 @@ function discoHoverOut() {
   discoHovering.value = false;
 }
 
-useMeta({
+useHead({
   title: 'Hi, i\'m Stijn Janmaat'
 })
 </script>

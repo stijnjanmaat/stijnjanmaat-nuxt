@@ -18,12 +18,12 @@
         </h1>
 
         <p
-          class="text-purple-100 text-xl pb-6"
+          class="text-cyan-200 text-xl pb-6"
         >
           Vue & Nuxt enthusiast, and overall modern Javascript fan-boy.
         </p>
 
-        <p class="text-purple-100 text-xl pb-12">
+        <p class="text-cyan-200 text-xl pb-12">
           Also,
           <s-link 
             class="disco-link" 
@@ -40,7 +40,7 @@
             Hire me now
           </s-button>
           <span class="px-4">or</span>
-          <s-button to="/contact/">
+          <s-button to="/me">
             Get to know me first
           </s-button>
         </p>

@@ -13,8 +13,8 @@
           <h2 class="font-semibold leading-snug text-3xl">
             Hi, I'm Stijn Janmaat
           </h2>
-          <p class="">
-            And this is
+          <p class="text-amber-300 mt-12 text-xl">
+            Interaction Designer turned Frontend Developer
           </p>
         </div>
         <me-photo class="w-1/3" />
@@ -30,6 +30,3 @@
 <script setup lang="ts">
 
 </script>
-
-<style scoped>
-</style>

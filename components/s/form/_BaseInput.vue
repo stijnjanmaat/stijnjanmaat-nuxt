@@ -5,12 +5,12 @@
       :name="name"
       v-bind="$attrs"
       :type="type"
-      :outer-class="`s-form-field relative w-96 max-w-full mb-5 bg-white px-4 pt-3 pb-1 ${focusClass}`"
-      label-class="font-semibold text-sm pb-1 block"
-      inner-class="mb-1 overflow-hidden"
+      :outer-class="`s-form-field relative w-96 max-w-full mb-5 bg-white pt-3 pb-1 ${focusClass}`"
+      label-class="font-semibold text-sm pb-1 block px-4"
+      inner-class="mb-1 overflow-hidden px-2"
       :input-class="inputClass"
       help-class="text-xs text-gray-500"
-      messages-class="text-sm text-orange-600 pb-2 font-semibold"
+      messages-class="px-4 text-sm text-orange-600 pb-2 font-semibold"
       @focus="handleFocus"
     />
   </div>
@@ -27,7 +27,7 @@ const props = defineProps<{
 }>();
 
 const inputClass = computed(() => {
-  return `border-none outline-none text-black placeholder-gray-400 w-full ${instance.attrs['input-class'] ?? ''}`;
+  return `border-none outline-none text-black placeholder-gray-400 px-2 w-full ${instance.attrs['input-class'] ?? ''}`;
 })
 
 const {
@@ -48,6 +48,6 @@ export default {
     box-shadow: 0 0 0 black;
   }
   :deep(.s-form-field-focus) {
-    box-shadow: 3px 5px 0 black;
+    box-shadow: 4px 6px 0 black;
   }
 </style>

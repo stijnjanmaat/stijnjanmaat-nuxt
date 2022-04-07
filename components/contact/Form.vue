@@ -26,6 +26,7 @@
 
       <s-button
         to="#"
+        class="mt-4"
         @click="clickSubmit"
       >
         Send it! 🛸

@@ -10,8 +10,12 @@
 
       <s-container class="pb-32">
         <h1 class="text-white text-4xl leading-snug pt-24 pb-12 font-semibold">
-          Drop me a line
+          Reach out
         </h1>
+
+        <p class="text-xl">
+          Think you might have cool project for me? Or tripped up by something on here? Send me a message!
+        </p>
       </s-container>
 
       <s-container class="pb-32">

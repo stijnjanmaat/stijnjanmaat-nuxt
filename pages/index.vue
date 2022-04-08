@@ -105,8 +105,8 @@ function discoHoverOut() {
 }
 
 useHead({
-  title: 'Hi, i\'m Stijn Janmaat'
-})
+  title: 'Hi, i\'m Stijn Janmaat - stijnjanmaat.nl',
+});
 </script>
 
 <style scoped lang="scss">

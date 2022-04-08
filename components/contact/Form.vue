@@ -43,14 +43,14 @@ const formId = 'contact';
 const formData = ref({
   name: '',
   message: '',
-  email: ''
-})
+  email: '',
+});
 
 const clickSubmit = () => submitForm(formId);
 const submitHandler = async(formData) => {
   const response = await $fetch('/api/mail', { method: 'POST', body: formData });
   console.log(response);
-}
+};
 </script>
 
 <style scoped>

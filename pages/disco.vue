@@ -9,5 +9,7 @@
 </template>
 
 <script setup lang="ts">
-
+useHead({
+  title: 'Disco 🕺 - stijnjanmaat.nl',
+});
 </script>

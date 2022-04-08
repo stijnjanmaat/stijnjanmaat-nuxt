@@ -13,7 +13,7 @@
           <h2 class="font-semibold leading-snug text-3xl">
             Hi, I'm Stijn Janmaat
           </h2>
-          <p class="text-amber-300 mt-12 text-xl">
+          <p class="text-amber-300 mt-12 text-xl leading-normal">
             Interaction Designer turned Frontend Developer
           </p>
         </div>
@@ -28,5 +28,7 @@
 </template>
 
 <script setup lang="ts">
-
+useHead({
+  title: 'On me, Stijn Janmaat - stijnjanmaat.nl',
+});
 </script>

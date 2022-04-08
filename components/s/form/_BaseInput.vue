@@ -28,18 +28,18 @@ const props = defineProps<{
 
 const inputClass = computed(() => {
   return `border-none outline-none text-black placeholder-gray-400 px-2 w-full ${instance.attrs['input-class'] ?? ''}`;
-})
+});
 
 const {
   handleFocus,
   focusClass,
-} = useFormKitFocus(props.name)
+} = useFormKitFocus(props.name);
 </script>
 
 <script lang="ts">
 export default {
   inheritAttrs: false,
-}
+};
 </script>
 
 <style scoped>

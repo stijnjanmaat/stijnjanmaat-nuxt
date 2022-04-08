@@ -13,7 +13,7 @@
           Reach out
         </h1>
 
-        <p class="text-xl">
+        <p class="text-xl leading-normal text-lime-200">
           Think you might have cool project for me? Or tripped up by something on here? Send me a message!
         </p>
       </s-container>
@@ -34,5 +34,7 @@
 </template>
 
 <script setup lang="ts">
-
+useHead({
+  title: 'Reach out - stijnjanmaat.nl',
+});
 </script>

@@ -82,14 +82,12 @@
 </template>
 
 <script setup lang="ts">
-// import { useScroll } from '@vueuse/core'
+interface Offsets {
+  [key: string]: number
+}
 
-  interface Offsets {
-    [key: string]: number
-  }
-
-const scrollingBg = ref<HTMLElement | null>(null)
-const experimentContainer = ref<HTMLElement | null>(null)
+const scrollingBg = ref<HTMLElement | null>(null);
+const experimentContainer = ref<HTMLElement | null>(null);
 const boundingClientRect = ref(null);
 
 const opacityCommon = (offset: number): number => {
@@ -109,7 +107,7 @@ const opacityOffsets: Offsets = {
   interaction: 460,
   designDevelopment: 550,
   idealistic: 620,
-}
+};
 
 const opacityCreative = computed(() => {
   return opacityCommon(opacityOffsets.creative);
@@ -126,13 +124,13 @@ const opacityIdealistic = computed(() => {
 
 const onScroll= () => {
   boundingClientRect.value = scrollingBg.value.getBoundingClientRect();
-}
+};
   
 onMounted(() => {
-  window.addEventListener('scroll', onScroll)
+  window.addEventListener('scroll', onScroll);
 });
 
 onBeforeUnmount(() => {
-  window.removeEventListener('scroll', onScroll)
-})
+  window.removeEventListener('scroll', onScroll);
+});
 </script>

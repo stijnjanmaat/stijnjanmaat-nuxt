@@ -10,7 +10,9 @@
 </template>
 
 <script setup lang="ts">
-
+useHead({
+  title: 'My work - stijnjanmaat.nl',
+});
 </script>
 
 <style scoped>

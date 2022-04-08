@@ -18,11 +18,18 @@ export default defineNuxtConfig({
   modules: ['@formkit/nuxt'],
   css: [
     '@/assets/css/tailwind.css',
-    '@/assets/css/global.css'
+    '@/assets/css/global.css',
   ],
   meta: {
+    htmlAttrs: {
+      lang: 'en',
+    },
     meta: [
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'robots', name: 'robots', content: 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1' },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      { hid: 'og:site_name', property: 'og:site_name', content: 'stijnjanmaat.nl' },
     ],
     link: [
       // copied manually from head, because head 
@@ -30,34 +37,34 @@ export default defineNuxtConfig({
       {
         hid: 'gf-prefetch',
         rel: 'dns-prefetch',
-        href: 'https://fonts.gstatic.com/'
+        href: 'https://fonts.gstatic.com/',
       },
       {
         hid: 'gf-preconnect',
         rel: 'preconnect',
         href: 'https://fonts.gstatic.com/',
-        crossorigin: ''
+        crossorigin: '',
       },
       {
         hid: 'gf-preload',
         rel: 'preload',
         as: 'style',
-        href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap'
+        href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap',
       },
       {
         hid: 'gf-style',
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap'
-      }
-    ]
+        href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap',
+      },
+    ],
   },
   googleFonts: {
     display: 'swap',
     useStylesheet: true,
     inject: true,
     families: {
-      'Poppins': [100, 400, 600]
-    }
+      'Poppins': [100, 400, 600],
+    },
   },
   privateRuntimeConfig: {
     MAILGUN_DOMAIN: process.env.MAILGUN_DOMAIN,
@@ -67,5 +74,5 @@ export default defineNuxtConfig({
     // 'ready': (nuxt) => {
     //   console.log(nuxt.options.head);
     // },
-  }
-})
+  },
+});

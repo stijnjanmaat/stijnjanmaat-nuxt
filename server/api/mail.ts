@@ -71,7 +71,7 @@ export default async (req: IncomingMessage, res: ServerResponse) => {
     };
   } catch (error) {
     console.log('[api-mail] Error', error);
-    req.statusCode = error.status;
+    res.statusCode = error.status;
 
     return { 
       error,

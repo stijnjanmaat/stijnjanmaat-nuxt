@@ -1,6 +1,7 @@
 <template>
   <div>
     <form-kit
+      v-if="!submitted"
       :id="formId"
       v-model="formData"
       type="form"
@@ -32,14 +33,30 @@
         Send it! 🛸
       </s-button>
     </form-kit>
+
+    <div
+      v-else
+      class="mail-sent-message relative bg-green-800 font-semibold pl-20 pr-5 py-4 mt-8 text-white"
+    >
+      Thanks, mail sent!
+    </div>
+
+    <div
+      v-if="errored"
+      class="mail-sent-error relative bg-red-800 font-semibold pl-24 pr-5 py-4 mt-8 text-white"
+    >
+      Oops, something went bad... To be sure the mail gets to me, <a href="mailto:stijn@stijnjanmaat.nl">email me</a>.
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { submitForm } from '@formkit/core';
+import { submitForm, getNode } from '@formkit/core';
 
 const formId = 'contact';
 
+const submitted = ref(false);
+const errored = ref(false);
 const formData = ref({
   name: '',
   message: '',
@@ -48,8 +65,14 @@ const formData = ref({
 
 const clickSubmit = () => submitForm(formId);
 const submitHandler = async(formData) => {
-  const response = await $fetch('/api/mail', { method: 'POST', body: formData });
-  console.log(response);
+  try {
+    await $fetch('/api/mail', { method: 'POST', body: formData });
+    submitted.value = true;
+    getNode(formId).reset();
+  } catch(err) {
+    console.log(err);
+    errored.value = true;
+  }
 };
 </script>
 
@@ -57,5 +80,15 @@ const submitHandler = async(formData) => {
   :deep(.formkit-form-messages:before) {
     @apply absolute bg-white -rotate-2 w-10 left-4 -top-2 font-black text-black text-4xl text-center leading-snug;
     content: '!';
-  } 
+  }
+
+  .mail-sent-message:before {
+    @apply absolute bg-white -rotate-2 px-1 left-4 -top-2 font-black text-black text-4xl text-center leading-snug;
+    content: '🕊';
+  }
+
+  .mail-sent-error:before {
+    @apply absolute bg-white -rotate-2 px-2 left-4 -top-2 font-black text-black text-4xl text-center leading-snug;
+    content: '❌';
+  }
 </style>

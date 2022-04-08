@@ -5,6 +5,7 @@ import Mailgun from 'mailgun.js';
 
 const DOMAIN = process.env.MAILGUN_DOMAIN;
 const API_KEY = process.env.MAILGUN_API_KEY;
+const URL = process.env.MAILGUN_URL;
 const ADMIN_EMAIL = 'stijn@stijnjanmaat.nl';
 
 const sendToAdmin = ({ mailgunClient, body }) => {
@@ -52,7 +53,7 @@ export default async (req: IncomingMessage, res: ServerResponse) => {
     const mailgunClient = mailgun.client({ 
       username: 'api', 
       key: API_KEY,
-      url: 'https://api.eu.mailgun.net',
+      url: URL,
     });
 
     const body = await useBody(req);

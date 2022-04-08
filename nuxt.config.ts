@@ -1,4 +1,4 @@
-import { defineNuxtConfig } from 'nuxt3'
+import { defineNuxtConfig } from 'nuxt3';
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
@@ -12,25 +12,44 @@ export default defineNuxtConfig({
       },
     },
   },
-  buildModules: [
-    '@/modules/google-fonts',
-  ],
+  // buildModules: [
+  //   '@/modules/google-fonts',
+  // ],
   modules: ['@formkit/nuxt'],
   css: [
     '@/assets/css/tailwind.css',
     '@/assets/css/global.css'
   ],
-  head: {
+  meta: {
     meta: [
       { name: 'viewport', content: 'width=device-width, initial-scale=1' }
     ],
-    // link: [
-    //   {
-    //     hid: 'test',
-    //     rel: 'test',
-    //     href: 'https://asd.nl'
-    //   }
-    // ]
+    link: [
+      // copied manually from head, because head 
+      // from buildModules doesn't seem to work in this nuxt3 beta
+      {
+        hid: 'gf-prefetch',
+        rel: 'dns-prefetch',
+        href: 'https://fonts.gstatic.com/'
+      },
+      {
+        hid: 'gf-preconnect',
+        rel: 'preconnect',
+        href: 'https://fonts.gstatic.com/',
+        crossorigin: ''
+      },
+      {
+        hid: 'gf-preload',
+        rel: 'preload',
+        as: 'style',
+        href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap'
+      },
+      {
+        hid: 'gf-style',
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap'
+      }
+    ]
   },
   googleFonts: {
     display: 'swap',
@@ -45,8 +64,8 @@ export default defineNuxtConfig({
     MAILGUN_API_KEY: process.env.MAILGUN_API_KEY,
   },
   hooks: {
-    'ready': (nuxt) => {
-      // console.log(nuxt.options.head);
-    },
+    // 'ready': (nuxt) => {
+    //   console.log(nuxt.options.head);
+    // },
   }
 })

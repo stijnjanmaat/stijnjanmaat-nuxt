@@ -9,7 +9,8 @@
         <div class="bg-white flex-grow" />
         <img
           class="max-w-sm"
-          src="assets/img/erlemeyer.svg"
+          src="@/assets/img/erlemeyer.svg"
+          alt=""
         >
         <div class="bg-white flex-grow" />
       </div>
@@ -81,57 +82,57 @@
 </template>
 
 <script setup lang="ts">
-  // import { useScroll } from '@vueuse/core'
+// import { useScroll } from '@vueuse/core'
 
   interface Offsets {
     [key: string]: number
   }
 
-  const scrollingBg = ref<HTMLElement | null>(null)
-  const experimentContainer = ref<HTMLElement | null>(null)
-  const boundingClientRect = ref(null);
+const scrollingBg = ref<HTMLElement | null>(null)
+const experimentContainer = ref<HTMLElement | null>(null)
+const boundingClientRect = ref(null);
 
-  const opacityCommon = (offset: number): number => {
-    if (!boundingClientRect.value)
-      return 0;
+const opacityCommon = (offset: number): number => {
+  if (!boundingClientRect.value)
+    return 0;
 
-    const correctedTopOffset = boundingClientRect.value.top - experimentContainer.value.offsetTop;
+  const correctedTopOffset = boundingClientRect.value.top - experimentContainer.value.offsetTop;
 
-    if (correctedTopOffset + offset > 0) 
-      return 0;
+  if (correctedTopOffset + offset > 0) 
+    return 0;
 
-    return Math.min(Math.max(-(correctedTopOffset + offset) * 0.05, 0), 1);
-  };
+  return Math.min(Math.max(-(correctedTopOffset + offset) * 0.05, 0), 1);
+};
 
-  const opacityOffsets: Offsets = {
-    creative: 380,
-    interaction: 460,
-    designDevelopment: 550,
-    idealistic: 620,
-  }
+const opacityOffsets: Offsets = {
+  creative: 380,
+  interaction: 460,
+  designDevelopment: 550,
+  idealistic: 620,
+}
 
-  const opacityCreative = computed(() => {
-    return opacityCommon(opacityOffsets.creative);
-  });
-  const opacityInteraction = computed(() => {
-    return opacityCommon(opacityOffsets.interaction);
-  });
-  const opacityDesignDevelopment = computed(() => {
-    return opacityCommon(opacityOffsets.designDevelopment);
-  });
-  const opacityIdealistic = computed(() => {
-    return opacityCommon(opacityOffsets.idealistic);
-  });
+const opacityCreative = computed(() => {
+  return opacityCommon(opacityOffsets.creative);
+});
+const opacityInteraction = computed(() => {
+  return opacityCommon(opacityOffsets.interaction);
+});
+const opacityDesignDevelopment = computed(() => {
+  return opacityCommon(opacityOffsets.designDevelopment);
+});
+const opacityIdealistic = computed(() => {
+  return opacityCommon(opacityOffsets.idealistic);
+});
 
-  const onScroll= () => {
-    boundingClientRect.value = scrollingBg.value.getBoundingClientRect();
-  }
+const onScroll= () => {
+  boundingClientRect.value = scrollingBg.value.getBoundingClientRect();
+}
   
-  onMounted(() => {
-    window.addEventListener('scroll', onScroll)
-  });
+onMounted(() => {
+  window.addEventListener('scroll', onScroll)
+});
 
-  onBeforeUnmount(() => {
-    window.removeEventListener('scroll', onScroll)
-  })
+onBeforeUnmount(() => {
+  window.removeEventListener('scroll', onScroll)
+})
 </script>

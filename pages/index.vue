@@ -48,24 +48,24 @@
         <div class="relative">
           <img
             class="mr-16 pt-16"
-            src="assets/img/chaos-of-creation-sloppy.svg"
+            src="@/assets/img/chaos-of-creation-sloppy.svg"
           >
           <img
             class="absolute w-24 left-[1%] bottom-[17%] animate-wiggle"
-            src="assets/img/wrong-question-mark.svg"
+            src="@/assets/img/wrong-question-mark.svg"
           >
 
           <div class="absolute w-8 top-[25%] left-[34%] animate-rotating">
             <img
               class="animate-hovering"
-              src="assets/img/triangle.svg"
+              src="@/assets/img/triangle.svg"
             >
           </div>
 
           <div class="absolute w-16 right-[28%] top-[28%] animate-hovering">
             <img
               class="animate-wiggle"
-              src="assets/img/star.svg"
+              src="@/assets/img/star.svg"
             >
           </div>
         </div>
@@ -183,7 +183,7 @@ useHead({
 .disco-bg {
   @apply bg-transparent bg-no-repeat;
   background-position: 80% 150px;
-  background-image: url("assets/img/disco-ball.png");
+  background-image: url("@/assets/img/disco-ball.png");
   background-size: clamp(100px, 100%, 400px) auto;
   animation: discoBg 4s linear infinite;
   * {

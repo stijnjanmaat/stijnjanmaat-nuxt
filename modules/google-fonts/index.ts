@@ -33,7 +33,7 @@ export default defineNuxtModule({
       outputDir: nuxt.options.dir.assets,
       stylePath: 'css/fonts.css',
       fontsDir: 'fonts',
-      fontsPath: '~assets/fonts'
+      fontsPath: '@/assets/fonts'
     }
 
     const options: ModuleOptions = {
@@ -51,7 +51,9 @@ export default defineNuxtModule({
     })
 
     // merge fonts from valid head link
-    const fontsParsed = (nuxt.options.head.link || []).filter(link => GoogleFontsHelper.isValidURL(link.href)).map(link => GoogleFontsHelper.parse(link.href))
+    const fontsParsed = (nuxt.options.head.link || [])
+      .filter(link => GoogleFontsHelper.isValidURL(link.href))
+      .map(link => GoogleFontsHelper.parse(link.href))
 
     if (fontsParsed.length) {
       googleFontsHelper.merge(...fontsParsed)
@@ -67,7 +69,8 @@ export default defineNuxtModule({
     }
 
     // remove fonts
-    nuxt.options.head.link = (nuxt.options.head.link || []).filter(link => !GoogleFontsHelper.isValidURL(link.href))
+    nuxt.options.head.link = (nuxt.options.head.link || [])
+      .filter(link => !GoogleFontsHelper.isValidURL(link.href))
 
     // download
     if (options.download) {

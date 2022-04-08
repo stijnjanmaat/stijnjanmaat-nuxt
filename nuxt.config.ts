@@ -13,17 +13,24 @@ export default defineNuxtConfig({
     },
   },
   buildModules: [
-    '~/modules/google-fonts',
+    '@/modules/google-fonts',
   ],
   modules: ['@formkit/nuxt'],
   css: [
-    'assets/css/tailwind.css',
-    'assets/css/global.css'
+    '@/assets/css/tailwind.css',
+    '@/assets/css/global.css'
   ],
   head: {
     meta: [
       { name: 'viewport', content: 'width=device-width, initial-scale=1' }
     ],
+    // link: [
+    //   {
+    //     hid: 'test',
+    //     rel: 'test',
+    //     href: 'https://asd.nl'
+    //   }
+    // ]
   },
   googleFonts: {
     display: 'swap',
@@ -37,4 +44,9 @@ export default defineNuxtConfig({
     MAILGUN_DOMAIN: process.env.MAILGUN_DOMAIN,
     MAILGUN_API_KEY: process.env.MAILGUN_API_KEY,
   },
+  hooks: {
+    'ready': (nuxt) => {
+      // console.log(nuxt.options.head);
+    },
+  }
 })

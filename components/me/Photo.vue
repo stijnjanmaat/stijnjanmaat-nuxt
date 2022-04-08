@@ -18,7 +18,7 @@
             >
             <img
               :style="layerStijn"
-              src="assets/img/stijn.jpg"
+              src="@/assets/img/stijn.jpg"
               alt="Stijn's hoofd"
             >
           </div>

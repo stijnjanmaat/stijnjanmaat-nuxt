@@ -12,63 +12,10 @@
 
     <main>
       <s-container>
-        <h1 class="text-white text-4xl leading-snug pt-24 pb-12">
-          Hi, I'm
-          <strong>Stijn Janmaat</strong> and I create web things.
-        </h1>
-
-        <p
-          class="text-cyan-200 text-xl pb-6"
-        >
-          Vue & Nuxt enthusiast, and overall modern Javascript fan-boy.
-        </p>
-
-        <p class="text-cyan-200 text-xl pb-12">
-          Also,
-          <s-link 
-            class="disco-link" 
-            @mouseover="discoHover" 
-            @mouseleave="discoHoverOut"
-          >disco</s-link>.
-        </p>
-
-        <p class="text-white">
-          <s-button
-            disabled
-            to="/contact"
-          >
-            Hire me now
-          </s-button>
-          <span class="px-4">or</span>
-          <s-button to="/me">
-            Get to know me first
-          </s-button>
-        </p>
-
-        <div class="relative">
-          <img
-            class="mr-16 pt-16"
-            src="@/assets/img/chaos-of-creation-sloppy.svg"
-          >
-          <img
-            class="absolute w-24 left-[1%] bottom-[17%] animate-wiggle"
-            src="@/assets/img/wrong-question-mark.svg"
-          >
-
-          <div class="absolute w-8 top-[25%] left-[34%] animate-rotating">
-            <img
-              class="animate-hovering"
-              src="@/assets/img/triangle.svg"
-            >
-          </div>
-
-          <div class="absolute w-16 right-[28%] top-[28%] animate-hovering">
-            <img
-              class="animate-wiggle"
-              src="@/assets/img/star.svg"
-            >
-          </div>
-        </div>
+        <home-hero 
+          @disco-link-mouse-over="discoHover" 
+          @disco-link-mouse-leave="discoHoverOut"
+        />
       </s-container>
     </main>
 
@@ -111,40 +58,6 @@ useHead({
 
 <style scoped lang="scss">
 
-@keyframes hovering {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-15%);
-  }
-}
-
-@keyframes rotating {
-  0% {
-    transform: rotate(360deg)
-  }
-  100% {
-    transform: rotate(0);
-  }
-}
-
-@keyframes wiggle {
-  0%, 100% { 
-    transform: rotate(-3deg) }
-  50% { transform: rotate(3deg) }
-}
-
-.animate-hovering {
-  animation: hovering 5s ease-in-out infinite;
-}
-.animate-rotating {
-  animation: rotating 20s linear infinite;
-}
-.animate-wiggle {
-  animation: wiggle 3s 2s ease-in-out infinite;
-}
-
 @keyframes discoBg {
   0% {
     @apply bg-yellow-300;
@@ -176,10 +89,14 @@ useHead({
   80%, 82%, 84%, 90% {
     @apply bg-white;
   }
-  100% {
+  95% {
     @apply bg-red-600;
   }
+  100% {
+    @apply bg-yellow-300;
+  }
 }
+
 .disco-bg {
   @apply bg-transparent bg-no-repeat;
   background-position: 80% 150px;

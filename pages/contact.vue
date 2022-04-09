@@ -9,12 +9,12 @@
       </header>
 
       <s-container class="pb-32">
-        <h1 class="text-white text-4xl leading-snug pt-24 pb-12 font-semibold">
+        <h1 class="text-white text-4xl md:text-5xl leading-snug md:leading-snug pt-24 pb-12 font-semibold">
           Reach out
         </h1>
 
         <p class="text-xl leading-normal text-lime-200">
-          Think you might have cool project for me? Or tripped up by something on here? Send me a message!
+          Think you might have cool project for me? Or is it something I said? Send me a message!
         </p>
       </s-container>
 
@@ -24,7 +24,10 @@
 
       <s-container class="pb-32">
         <p class="text-white text-lg">
-          Or you just email me @ <a href="mailto:stijn@stijnjanmaat.nl">stijn@stijnjanmaat.nl</a>.
+          Or just email me: <a href="mailto:stijn@stijnjanmaat.nl">stijn@stijnjanmaat.nl</a>.
+        </p>
+        <p class="text-white text-lg">
+          Find me on <s-link to="https://www.linkedin.com/in/stijn-janmaat">LinkedIn</s-link>.
         </p>
       </s-container>
     </main>

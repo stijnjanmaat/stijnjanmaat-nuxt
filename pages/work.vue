@@ -13,7 +13,10 @@
 useHead({
   title: 'My work - stijnjanmaat.nl',
 });
-</script>
 
-<style scoped>
-</style>
+onMounted(() => {
+  const visitedCookie = useVisitedCookie();
+
+  visitedCookie.workVisited = true;
+});
+</script>

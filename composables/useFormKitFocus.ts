@@ -1,4 +1,4 @@
-import { getNode } from '@formkit/core'
+import { getNode } from '@formkit/core';
 
 type FocusFunc = () => void
 
@@ -11,19 +11,19 @@ export default function (name: string): { handleFocus: FocusFunc, focusClass: Re
     node.context.handlers.blur = () => {
       handleBlur();
       originalBlur();
-    }
-  })
+    };
+  });
 
   const handleBlur = (): void => {
     focusClass.value = '';
-  }
+  };
 
   const handleFocus = () => {
-    focusClass.value = 's-form-field-focus'
-  }
+    focusClass.value = 's-form-field-focus';
+  };
 
   return {
     handleFocus,
     focusClass,
-  }
+  };
 }

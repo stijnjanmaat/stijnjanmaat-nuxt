@@ -1,10 +1,12 @@
 <template>
   <nuxt-link
-    :to="to"
-    :disabled="disabled"
+    :to="disabled ? '#' : to"
     class="relative s-button inline-block"
   >
-    <span class="relative inline-block px-6 py-4 bg-white text-xl font-bold text-purple-900 z-1">
+    <span
+      class="relative inline-block px-6 py-4 bg-white text-xl font-bold z-1"
+      :class="textColor"
+    >
       <slot />
     </span>
   </nuxt-link>
@@ -13,14 +15,30 @@
 <script setup lang="ts">
 import { RouteLocationRaw } from 'vue-router';
 
+type ButtonColor = 'purple' | 'red' | 'orange'; 
+
 interface Props {
-  to: RouteLocationRaw,
+  to: RouteLocationRaw
+  color?: ButtonColor
   disabled?: boolean
 }
 
-withDefaults(defineProps<Props>(), {
+const props = withDefaults(defineProps<Props>(), {
   disabled: false,
+  color: 'purple',
 });
+
+const textColor = computed(() => {
+  switch (props.color) {
+  case 'purple':
+    return 'text-purple-900';
+  case 'red':
+    return 'text-red-800';
+  case 'orange':
+    return 'text-orange-800';
+  }
+});
+
 </script>
 
 <style>

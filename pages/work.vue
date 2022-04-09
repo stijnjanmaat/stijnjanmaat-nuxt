@@ -10,6 +10,10 @@
 </template>
 
 <script setup lang="ts">
+definePageMeta({
+  layout: 'default',
+});
+
 useHead({
   title: 'My work - stijnjanmaat.nl',
 });

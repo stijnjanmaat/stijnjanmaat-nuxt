@@ -70,6 +70,10 @@
 </template>
 
 <script setup lang="ts">
+definePageMeta({
+  layout: 'default',
+});
+
 useHead({
   title: 'On me, Stijn Janmaat - stijnjanmaat.nl',
 });

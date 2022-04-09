@@ -37,6 +37,10 @@
 </template>
 
 <script setup lang="ts">
+definePageMeta({
+  layout: 'default',
+});
+
 useHead({
   title: 'Reach out - stijnjanmaat.nl',
 });

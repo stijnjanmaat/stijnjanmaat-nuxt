@@ -28,6 +28,10 @@
 </template>
 
 <script lang="ts" setup>
+definePageMeta({
+  layout: 'default',
+});
+
 const discoHovering = ref(false);
 const discoAnimationFinished = ref(false);
 // const discoExcuseShown = ref(false);

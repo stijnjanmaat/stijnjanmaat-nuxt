@@ -70,6 +70,9 @@ export default defineNuxtConfig({
       'Poppins': [100, 400, 600],
     },
   },
+  publicRuntimeConfig: {
+    GOOGLE_ANALYTICS_ID: process.env.GOOGLE_ANALYTICS_ID,
+  },
   privateRuntimeConfig: {
     MAILGUN_DOMAIN: process.env.MAILGUN_DOMAIN,
     MAILGUN_API_KEY: process.env.MAILGUN_API_KEY,

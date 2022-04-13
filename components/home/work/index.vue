@@ -11,7 +11,7 @@
           Check out some of my work
         </h2>
         <p class="text-center mt-12">
-          <s-button to="/me">
+          <s-button to="/work">
             Let's get to work
           </s-button>
         </p>

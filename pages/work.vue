@@ -6,6 +6,23 @@
         <s-menu />
       </s-container>
     </header>
+
+    <div>
+      ikbenfrits
+
+      vue apps, dashboard, tools
+      seo
+    </div>
+
+    Backend
+    agenda, calendar
+
+    Shifter
+    2013
+      
+
+    Zappotv
+    Design
   </div>
 </template>
 

@@ -28,6 +28,7 @@
     "cookie-universal-nuxt": "^2.1.5",
     "formdata-node": "^4.3.2",
     "google-fonts-helper": "^2.0.1",
-    "mailgun.js": "^5.0.5"
+    "mailgun.js": "^5.0.5",
+    "vue-gtag": "^2.0.1"
   }
 }

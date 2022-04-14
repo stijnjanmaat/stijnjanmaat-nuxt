@@ -30,7 +30,9 @@
         class="mt-4"
         @click="clickSubmit"
       >
-        Send it! 🛸
+        <div class="flex items-center">
+          Send it! <span class="inline-block text-xl ml-2 i-uil-rocket" />
+        </div>
       </s-button>
     </form-kit>
 
@@ -39,13 +41,19 @@
       class="mail-sent-message relative bg-green-800 font-semibold pl-20 pr-5 py-4 mt-8 text-white"
     >
       Thanks, mail sent!
+      <span class="absolute bg-white -rotate-2 px-2 py-2 left-4 -top-2 font-black text-black text-4xl text-center leading-snug">
+        <div class="i-uil-envelope-check" />
+      </span>
     </div>
 
     <div
-      v-if="errored"
+      v-if="!errored"
       class="mail-sent-error relative bg-red-800 font-semibold pl-24 pr-5 py-4 mt-8 text-white"
     >
       Oops, something went bad... To be sure the mail gets to me, <a href="mailto:stijn@stijnjanmaat.nl">email me</a>.
+      <span class="absolute bg-white -rotate-2 px-2 py-2 left-4 -top-2 font-black text-black text-4xl text-center leading-snug">
+        <div class="i-uil-envelope-exclamation" />
+      </span>
     </div>
   </div>
 </template>
@@ -80,15 +88,5 @@ const submitHandler = async(formData) => {
   :deep(.formkit-form-messages:before) {
     @apply absolute bg-white -rotate-2 w-10 left-4 -top-2 font-black text-black text-4xl text-center leading-snug;
     content: '!';
-  }
-
-  .mail-sent-message:before {
-    @apply absolute bg-white -rotate-2 px-1 left-4 -top-2 font-black text-black text-4xl text-center leading-snug;
-    content: '🕊';
-  }
-
-  .mail-sent-error:before {
-    @apply absolute bg-white -rotate-2 px-2 left-4 -top-2 font-black text-black text-4xl text-center leading-snug;
-    content: '❌';
   }
 </style>

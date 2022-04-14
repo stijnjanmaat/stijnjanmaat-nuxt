@@ -9,7 +9,7 @@
 
     <s-container>
       <div class="flex justify-between">
-        <div class="pt-24 max-w-lg min-h-[65vh]">
+        <div class="pt-24 max-w-lg min-h-[75vh]">
           <h1 class="font-semibold text-4xl md:text-5xl leading-snug md:leading-snug">
             Hi, I'm Stijn Janmaat
           </h1>
@@ -20,12 +20,13 @@
             Over the years moved from product and concept development, through full stack development and growth hacking towards frontend development.
           </p>
 
-          <s-link
-            class="text-amber-200 text-xl leading-normal"
-            to="#sectionFrontend"
+          <a
+            v-smooth-scroll
+            class="s-link text-amber-200 text-xl leading-normal flex"
+            href="#sectionFrontend"
           >
-            Read more below ⬇
-          </s-link>
+            Read more below <div class="ml-1 text-3xl i-uil-arrow-down" />
+          </a>
         </div>
 
         <me-photo class="w-1/3" />
@@ -55,7 +56,10 @@
         <s-container class="px-8 rotate-1 -mt-4">
           <div class="bg-white px-24 pb-24">
             <div class="-rotate-1">
-              <h3 class="text-4xl font-semibold pt-16 text-center">
+              <h3
+                id="sectionTesting"
+                class="text-4xl font-semibold pt-16 text-center"
+              >
                 Decent Testing
               </h3>
               <p class="mt-12 text-xl leading-normal">
@@ -125,7 +129,10 @@
             Full Stack Experience
           </h3>
           <p class="mt-12 text-xl leading-normal">
-            Altough I have specialized in frontend, I started off with playing around with <strong>PHP</strong> and <strong>Wordpress</strong> 11 years ago. It quickly turned into my profession. Past couple of years I developed my skills in <strong>Node.js</strong> and <strong>Ruby on Rails</strong>.
+            Altough I have specialized in frontend, I started off with playing around with <strong>PHP</strong> and <strong>Wordpress</strong> 11 years ago. It quickly turned into my profession. Past couple of years I developed my skills in <strong>Node.js</strong> and <strong>Ruby on Rails</strong>. 
+          </p>
+          <p>
+            Worked a lot with <strong>MySQL</strong>, <strong>Redis</strong>.
           </p>
           <p class="mt-6 text-xl leading-normal">
             As most senior developer at Frits, I also gained experience in devops. I (co)created and maintained complex CI pipelines in <strong>Gitlab CI</strong> and worked intensively with <strong>Docker</strong> and <strong>k8s</strong>.
@@ -134,7 +141,6 @@
       </s-container>
     </div>
   </div>
-    
   
 
   philosophy

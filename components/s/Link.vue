@@ -1,7 +1,7 @@
 <template>
   <nuxt-link
     :to="to"
-    class="underline decoration-2 underline-offset-2"
+    class="s-link"
   >
     <slot />
   </nuxt-link>
@@ -12,5 +12,5 @@ import { RouteLocationRaw } from 'vue-router';
 
 defineProps<{
   to?: RouteLocationRaw
-}>()
+}>();
 </script>

@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .s-link {
+    @apply underline decoration-2 underline-offset-2
+  }
+}

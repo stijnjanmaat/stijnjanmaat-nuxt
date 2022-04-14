@@ -23,11 +23,14 @@
       </s-container>
 
       <s-container class="pb-32">
-        <p class="text-white text-lg">
-          Or just email me: <a href="mailto:stijn@stijnjanmaat.nl">stijn@stijnjanmaat.nl</a>.
+        <p class="text-white text-lg flex items-center">
+          Or just&nbsp;<span class="inline-block text-xl i-uil-envelope" />&nbsp;me&nbsp;<a href="mailto:stijn@stijnjanmaat.nl">stijn@stijnjanmaat.nl</a>.
         </p>
-        <p class="text-white text-lg">
-          Find me on <s-link to="https://www.linkedin.com/in/stijn-janmaat">LinkedIn</s-link>.
+        <p class="text-white text-lg flex">
+          Find me on&nbsp;<s-link
+            to="https://www.linkedin.com/in/stijn-janmaat"
+            class="flex items-center"
+          ><span class="inline-block text-xl i-uil-linkedin mr-1" />LinkedIn</s-link>.
         </p>
       </s-container>
     </main>

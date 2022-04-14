@@ -12,9 +12,10 @@ export default defineNuxtConfig({
       },
     },
   },
-  // buildModules: [
-  //   '@/modules/google-fonts',
-  // ],
+  buildModules: [
+    // '@/modules/google-fonts',
+    '@unocss/nuxt',
+  ],
   modules: [
     '@formkit/nuxt',
     'cookie-universal-nuxt',
@@ -69,6 +70,12 @@ export default defineNuxtConfig({
     families: {
       'Poppins': [100, 400, 600],
     },
+  },
+  unocss: {
+    // presets
+    uno: false,
+    icons: true, // enabled `@unocss/preset-icons`
+    attributify: false,
   },
   publicRuntimeConfig: {
     GOOGLE_ANALYTICS_ID: process.env.GOOGLE_ANALYTICS_ID,

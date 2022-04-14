@@ -10,10 +10,10 @@
     <s-container>
       <div class="flex justify-between">
         <div class="pt-24 max-w-lg min-h-[75vh]">
-          <h1 class="font-semibold text-4xl md:text-5xl leading-snug md:leading-snug">
+          <h1 class="font-semibold text-4xl md:text-5xl leading-snug md:leading-snug mb-6">
             Hi, I'm Stijn Janmaat
           </h1>
-          <p class="text-amber-200 mt-12 text-xl leading-normal mb-6">
+          <p class="text-amber-200 text-xl leading-normal mb-6">
             Interaction Designer turned Frontend Developer.
           </p>
           <p class="text-amber-200 text-xl leading-normal mb-12">

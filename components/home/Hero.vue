@@ -6,12 +6,12 @@
     </h1>
 
     <p
-      class="text-cyan-200 text-xl pb-6"
+      class="text-amber-200 text-xl pb-6"
     >
       Vue & Nuxt enthusiast, and overall modern Javascript fan-boy.
     </p>
 
-    <p class="text-cyan-200 text-xl pb-8">
+    <p class="text-amber-200 text-xl pb-8">
       Also,
       <s-link 
         class="disco-link" 

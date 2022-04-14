@@ -11,7 +11,6 @@ $fetch('/api/ping');
 
 onMounted(() => {
   const route = useRoute();
-  console.log(route);
   pageview(route);
 });
 </script>

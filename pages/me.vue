@@ -45,7 +45,7 @@
                 Elegant Frontend Solutions
               </h3>
               <p class="mt-12 text-xl leading-normal">
-                Over 6 years of professional experience in <strong>Vue</strong>, <strong>Nuxt</strong> and <strong>Javascript ES6</strong>. Touched upon all things web and browser: technical seo, privacy measures and compliance, performance, security, responsiveness, browser compatibility etcetera.
+                Over 6 years of professional experience in <strong>Vue</strong>, <strong>Nuxt</strong> and <strong>Javascript ES6</strong>. Touched upon all things web and browser: technical seo, privacy measures and compliance, performance, security, responsiveness, browser compatibility, tracking etcetera.
               </p>
             </div>
           </s-container>
@@ -80,13 +80,13 @@
             Team work
           </h3>
           <p class="mt-12 text-xl leading-normal">
-            I've worked in many different team structures: multidisciplinary and pure development, with Agile and Kanban development framework. Chapter lead: setting and sharing design patterns, documentation, organize knowledge sharing, assure code quality by discussing code practices.
+            I've worked in many different team structures: multidisciplinary and pure development, with Agile and Kanban development framework. As <strong>Frontend Chapter Lead</strong> I developed and shared code design patterns, managed documentation, organize knowledge sharing sessions about best practices, assuring the code quality is up to standards. In some project teams I fulfilled the role of <strong>Product Owner</strong> while also contributing as a developer.
           </p>
           <p class="mt-6 text-xl leading-normal">
-            I've managed project teams as a Product Owner while also contributing as a developer. 
+            My leadership style revolves around responsibility, equality and inspiration. I encourage my peers to <strong>think critically</strong> about what we're working on, having a constant discussion is vital to continuous improvement of our product. This freedom to decide what's next also means it's <strong>encouraged to take responsibility</strong>. But most importantly: by having a very <strong>clear purpose</strong> in mind and believing we can achieve the goals associated, I'd like to put energy in inspiring the team. To work for the common goals, and for eachother.
           </p>
           <p class="mt-6 text-xl leading-normal">
-            I'm a big fan of Holacracy. My best experiences were with self governing teams. Everybody had their own expertises, roles and responsbilities, but have one purpose and work on one common goal. 
+            This is also why I'm a <strong>big fan of Holacracy</strong>. My best experiences were with self governing teams. Everybody had their own expertises, roles and responsbilities, but have one purpose and work on one common goal. 
           </p>
         </div>
 
@@ -143,21 +143,23 @@
   </div>
   
 
-  philosophy
-  don't build everything yourself
-  educated cuts
-  balance in speed and quality
+  <div>
+    philosophy
+    don't build everything yourself
+    educated cuts
+    balance in speed and quality
 
-  leadership
-  lead by example
-  inspiration
-  getting energy from the common cause
+    leadership
+    lead by example
+    inspiration
+    getting energy from the common cause
 
-  impact
+    impact
 
-  future
+    future
 
-  develop myself in educating, strategic achieving goals
+    develop myself in educating, strategic achieving goals
+  </div>
 
   <s-footer />
 </template>

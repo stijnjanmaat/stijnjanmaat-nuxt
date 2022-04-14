@@ -1,42 +1,44 @@
 <template>
-  <Transition>
-    <div
-      v-if="show"
-      class="fixed top-24 left-0 w-full"
-    >
-      <s-container>
-        <div
-          class="hire-me-now-disabled-msg text-white pl-16 pr-10 pt-8 pb-8 top-24 max-w-md"
-          :class="bgClass"
-        >
-          <slot>
-            <slot name="title">
-              <h3
-                v-if="title"
-                class="text-2xl font-semibold mb-4"
-              >
-                {{ title }}
-              </h3>
+  <div>
+    <transition>
+      <div
+        v-if="show"
+        class="fixed top-24 left-0 w-full"
+      >
+        <s-container>
+          <div
+            class="hire-me-now-disabled-msg text-white pl-16 pr-10 pt-8 pb-8 top-24 max-w-md"
+            :class="bgClass"
+          >
+            <slot>
+              <slot name="title">
+                <h3
+                  v-if="title"
+                  class="text-2xl font-semibold mb-4"
+                >
+                  {{ title }}
+                </h3>
+              </slot>
+              <slot name="body">
+                {{ body }}
+              </slot>
             </slot>
-            <slot name="body">
-              {{ body }}
-            </slot>
-          </slot>
 
-          <footer class="text-right mt-8">
-            <s-button
-              v-if="closable"
-              to="#"
-              color="orange"
-              @click="emit('close')"
-            >
-              Close
-            </s-button>
-          </footer>
-        </div>
-      </s-container>
-    </div>
-  </Transition>
+            <footer class="text-right mt-8">
+              <s-button
+                v-if="closable"
+                to="#"
+                color="orange"
+                @click="emit('close')"
+              >
+                Close
+              </s-button>
+            </footer>
+          </div>
+        </s-container>
+      </div>
+    </transition>
+  </div>
 </template>
 
 <script setup lang="ts">

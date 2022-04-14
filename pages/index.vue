@@ -18,13 +18,13 @@
         />
       </s-container>
     </main>
-
-    <home-experiment />
-    
-    <home-work />
-
-    <s-footer />
   </div>
+
+  <home-experiment />
+    
+  <home-work />
+
+  <s-footer />
 </template>
 
 <script lang="ts" setup>

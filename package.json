@@ -33,6 +33,7 @@
     "google-fonts-helper": "^2.0.1",
     "mailgun.js": "^5.0.5",
     "vue-gtag": "^2.0.1",
+    "vue3-carousel": "^0.1.38",
     "vue3-smooth-scroll": "^0.8.1"
   }
 }

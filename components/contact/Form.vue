@@ -47,7 +47,7 @@
     </div>
 
     <div
-      v-if="!errored"
+      v-if="errored"
       class="mail-sent-error relative bg-red-800 font-semibold pl-24 pr-5 py-4 mt-8 text-white"
     >
       Oops, something went bad... To be sure the mail gets to me, <a href="mailto:stijn@stijnjanmaat.nl">email me</a>.

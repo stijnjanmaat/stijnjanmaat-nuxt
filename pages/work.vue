@@ -39,26 +39,28 @@
 
     <div class="bg-gradient-to-br from-green-200 via-teal-300 to-sky-400">
       <s-container>
-        <div class="pt-16 mb-16">
-          <h1 class="font-semibold text-4xl md:text-5xl leading-snug md:leading-snug mb-2">
-            Ikbenfrits <span class="text-cyan-500">from 2016 to 2022</span>
-          </h1>
+        <div class="max-w-xl">
+          <div class="pt-16 mb-16">
+            <h1 class="font-semibold text-4xl md:text-5xl leading-snug md:leading-snug mb-2">
+              Ikbenfrits <span class="text-cyan-500">from 2016 to 2022</span>
+            </h1>
 
-          <p class="text-lg leading-normal mb-6 max-w-lg">
-            Online Mortgage Advice company
-          </p>
+            <p class="text-lg leading-normal mb-6 max-w-lg">
+              Online Mortgage Advice company
+            </p>
 
-          <p class="text-lg mb-4 text-gray-800">
-            Started off as <strong>Growth Hacker</strong>: coming up with ways to engage with our customers, building it, testing it, measure performance, analysing and going back to the drawing board. As Ikbenfrits grew, I grew into <strong>Full Stack Development</strong>, building and maintaining the public facing, free to use tools and client's dashboard. The last years I fulfilled the role of <strong>Frontend Chapter Lead</strong>.
-          </p>
+            <p class="text-lg mb-4 text-gray-800">
+              Started off as <strong>Growth Hacker</strong>: coming up with ways to engage with our customers, building it, testing it, measure performance, analysing and going back to the drawing board. As Ikbenfrits grew, I grew into <strong>Full Stack Development</strong>, building and maintaining the public facing, free to use tools and client's dashboard. The last years I fulfilled the role of <strong>Frontend Chapter Lead</strong>.
+            </p>
 
-          <p class="text-lg mb-4 text-gray-800">
-            Over the years, we built 80+ Vue apps, ranging from client leadmagnets to automatically generated pages based on Funda listings, from dashboard mortgage data dollection forms to document upload interfaces. Touched upon everything related to effective frontend solutions.
-          </p>
+            <p class="text-lg mb-4 text-gray-800">
+              Over the years, we built 80+ Vue apps, ranging from client leadmagnets to automatically generated pages based on Funda listings, from dashboard mortgage data dollection forms to document upload interfaces. Touched upon everything related to effective frontend solutions.
+            </p>
 
-          <p class="text-lg mb-4 text-gray-800">
-            My magnus opus was converting all Vue apps into one glorious Nuxt app. Over a year me and my team refactored all apps into one Nuxt project. This resulted in a clear distinction of a SSR frontend by Nuxt, while all content and other data was delivered by our Ruby and PHP backends over api's.
-          </p>
+            <p class="text-lg mb-4 text-gray-800">
+              My magnus opus was converting all Vue apps into one glorious Nuxt app. Over a year me and my team refactored all apps into one Nuxt project. This resulted in a clear distinction of a SSR frontend by Nuxt, while all content and other data was delivered by our Ruby and PHP backends over api's.
+            </p>
+          </div>
         </div>
       </s-container>
 

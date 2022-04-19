@@ -3,9 +3,9 @@
     <picture>
       <img src="@/assets/img/disco-ball.png">
     </picture>
-  </div>
 
-  <s-footer />
+    <s-footer />
+  </div>
 </template>
 
 <script setup lang="ts">

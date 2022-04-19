@@ -1,4 +1,7 @@
 const vueGtag = defineNuxtPlugin((nuxtApp) => {
+  if (process.env.NODE_ENV !== 'production')
+    return;
+  
   const preloadLinks = [
     {
       rel: 'preload',

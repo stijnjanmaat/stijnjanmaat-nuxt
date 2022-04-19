@@ -1,30 +1,32 @@
 <template>
-  <div
-    class="bg-gradient-to-br via-purple-600 to-orange-400 from-cyan-500"
-    :class="{ 'disco-bg': discoHovering }"
-  >
-    <header>
-      <s-container class="pt-12 flex justify-between">
-        <s-logo class="text-cyan-200" />
-        <s-menu />
-      </s-container>
-    </header>
+  <div>
+    <div
+      class="bg-gradient-to-br via-purple-600 to-orange-400 from-cyan-500"
+      :class="{ 'disco-bg': discoHovering }"
+    >
+      <header>
+        <s-container class="pt-12 flex justify-between">
+          <s-logo class="text-cyan-200" />
+          <s-menu />
+        </s-container>
+      </header>
 
-    <main>
-      <s-container>
-        <home-hero 
-          @disco-link-mouse-over="discoHover" 
-          @disco-link-mouse-leave="discoHoverOut"
-        />
-      </s-container>
-    </main>
-  </div>
+      <main>
+        <s-container>
+          <home-hero 
+            @disco-link-mouse-over="discoHover" 
+            @disco-link-mouse-leave="discoHoverOut"
+          />
+        </s-container>
+      </main>
+    </div>
 
-  <home-experiment />
+    <home-experiment />
     
-  <home-work />
+    <home-work />
 
-  <s-footer />
+    <s-footer />
+  </div>
 </template>
 
 <script lang="ts" setup>

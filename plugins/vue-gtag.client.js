@@ -8,7 +8,7 @@ const vueGtag = defineNuxtPlugin((nuxtApp) => {
       params: {
         anonymize_ip: true,
       },
-      // disabled: true, // Here you could ignore user privacy and set to true
+      disabled: process.env.NODE_ENV !== 'production', // Here you could ignore user privacy and set to true
     },
   });
 });

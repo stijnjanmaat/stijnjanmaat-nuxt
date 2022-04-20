@@ -55,7 +55,7 @@
       
         <div class="section-testing min-h-[60vh] pb-24">
           <s-container class="px-8 rotate-1 -mt-4">
-            <div class="bg-white px-24 pb-24">
+            <div class="bg-white px-8 md:px-24 pb-16 md:pb-24">
               <div class="-rotate-1">
                 <h3
                   id="sectionTesting"
@@ -77,14 +77,17 @@
       <div class="section-team">
         <s-container>
           <div class="max-w-md text-white">
-            <h3 class="text-4xl font-semibold pt-16">
+            <h3
+              id="sectionTeamWork"
+              class="text-4xl font-semibold pt-16"
+            >
               Team work
             </h3>
             <p class="mt-12 text-xl leading-normal">
               I've worked in many different team structures: multidisciplinary and pure development, with Agile and Kanban development framework. As <strong>Frontend Chapter Lead</strong> I developed and shared code design patterns, managed documentation, organize knowledge sharing sessions about best practices, assuring the code quality is up to standards. In some project teams I fulfilled the role of <strong>Product Owner</strong> while also contributing as a developer.
             </p>
             <p class="mt-6 text-xl leading-normal">
-              My leadership style revolves around responsibility, equality and inspiration. I encourage my peers to <strong>think critically</strong> about what we're working on, having a constant discussion is vital to continuous improvement of our product. This freedom to decide what's next also means it's <strong>encouraged to take responsibility</strong>. But most importantly: by having a very <strong>clear purpose</strong> in mind and believing we can achieve the goals associated, I'd like to put energy in inspiring the team. To work for the common goals, and for eachother.
+              My leadership style revolves around responsibility, equality and inspiration. I encourage my peers to <strong>think critically</strong> about what we're working on, having a constant discussion is vital to continuous improvement of our product. This freedom to decide what's next also means it's <strong>encouraged to take responsibility</strong>. But most importantly: by having a very <strong>clear purpose</strong> in mind and believing we can achieve the goals associated, I'd like to put energy in inspiring the team. To work for the common goals, and for each other.
             </p>
             <p class="mt-6 text-xl leading-normal">
               This is also why I'm a <strong>big fan of Holacracy</strong>. My best experiences were with self governing teams. Everybody had their own expertises, roles and responsibilities, but have one purpose and work on one common goal. 
@@ -94,7 +97,8 @@
           <div class="animate-pan pb-24">
             <img
               src="@/assets/img/bee.svg"
-              class="mt-12 ml-12 bee animate-hovering w-24"
+              class="mt-12 ml-12 bee animate-hovering w-8 sm:w-12 md:w-16 lg:w-24"
+              alt="Bee"
             >
           </div>
         </s-container>
@@ -105,7 +109,10 @@
       <div class="section-design min-h-[70vh]">
         <s-container>
           <div class="max-w-md pb-16 text-gray-700">
-            <h3 class="text-4xl font-semibold pt-16">
+            <h3
+              id="sectionDesign"
+              class="text-4xl font-semibold pt-16"
+            >
               Interaction Design
             </h3>
             <p class="mt-12 text-lg">
@@ -125,7 +132,7 @@
     <div class="bg-slate-600">
       <div class="section-full-stack min-h-[80vh]">
         <s-container>
-          <div class="ml-auto mr-0 max-w-xl text-white text-right">
+          <div class="ml-auto mr-0 max-w-xl text-white text-right pb-16">
             <h3 class="text-4xl font-semibold pt-16">
               Full Stack Experience
             </h3>
@@ -144,22 +151,25 @@
       <div class="section-future min-h-[70vh]">
         <s-container class="relative">
           <div class="max-w-md text-white pb-32 md:pb-64">
-            <h3 class="text-4xl font-semibold pt-16">
-              My Future
-            </h3>
-            <p class="mt-12 text-xl leading-normal">
-              I like to be involved with both the early creative phase of product development, as well as building and execution. So in my new occupation I'm looking for both.
-            </p>
-            <p class="mt-6 text-xl leading-normal">
-              As mentioned, I am motivated by a compelling purpose. This can be related to societal issues, challenging unfair status quos, sustainability... As long as i can contribute directly and <strong>make impact</strong>.
-            </p>
-            <p class="mt-6 text-xl leading-normal lg:mb-4">
-              The coming years I like to develop my skills in education and sharing knowledge and learning about strategic product development.
-            </p>
+            <div class="relative z-10">
+              <h3 class="text-4xl font-semibold pt-16">
+                My Future
+              </h3>
+              <p class="mt-12 text-xl leading-normal">
+                I like to be involved with both the early creative phase of product development, as well as building and execution. So in my new occupation I'm looking for both.
+              </p>
+              <p class="mt-6 text-xl leading-normal">
+                As mentioned, I am motivated by a <strong>compelling purpose</strong>. This can be related to social issues, challenging unfair status quos, sustainability... As long as I can contribute directly and <strong>make impact</strong>.
+              </p>
+              <p class="mt-6 text-xl leading-normal lg:mb-4">
+                The coming years I like to develop my skills in education and sharing knowledge and learning about strategic product development.
+              </p>
+            </div>
             
             <div class="animate-rotating absolute right-[10%] bottom-[40%] sm:right-[15%] md:bottom-[55%] lg:right-12 lg:bottom-[80%] w-1/12">
               <img
                 src="@/assets/img/moon.svg"
+                alt="Moon"
               >
             </div>
           </div>
@@ -187,7 +197,7 @@ onMounted(() => {
 });
 </script>
 
-<style scoped>
+<style scoped lang="scss">
   
 .section-frontend-bg {
   background-image: url('@/assets/img/starry-bg.svg');
@@ -248,6 +258,10 @@ onMounted(() => {
     1px 2px white,
     2px 1px white,
     2px 2px white;
+
+  @media (max-width: theme('screens.md')) {
+    background-image: none;
+  }
 }
 
 @keyframes rotating {
@@ -261,7 +275,7 @@ onMounted(() => {
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: 0%;
-  background-position-y: 100%;
+  background-position-y: 0%;
 }
 
 .animate-rotating {

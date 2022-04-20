@@ -25,8 +25,8 @@
       </s-container>
 
       <s-container class="pb-32">
-        <p class="text-white text-lg flex items-center mb-6">
-          Or just&nbsp;<span class="inline-block text-xl i-uil-envelope" />&nbsp;me&nbsp;<a href="mailto:stijn@stijnjanmaat.nl">stijn@stijnjanmaat.nl</a>.
+        <p class="text-white text-lg mb-6">
+          Or just mail me&nbsp;<a href="mailto:stijn@stijnjanmaat.nl">stijn@stijnjanmaat.nl</a>.
         </p>
         <p class="text-white text-lg flex">
           Find me on&nbsp;<s-link

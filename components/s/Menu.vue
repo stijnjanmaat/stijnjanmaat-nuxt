@@ -1,5 +1,5 @@
 <template>
-  <menu class="text-right">
+  <menu class="text-right -mt-1">
     <s-menu-item to="/me">
       Me
     </s-menu-item>

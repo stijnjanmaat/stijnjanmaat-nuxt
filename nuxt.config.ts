@@ -23,7 +23,6 @@ export default defineNuxtConfig({
   css: [
     'vue3-carousel/dist/carousel.css',
     '@/assets/css/tailwind.css',
-    '@/assets/css/global.css',
   ],
   meta: {
     htmlAttrs: {

@@ -17,7 +17,7 @@
                 class="absolute max-w-sm bg-white text-left px-4 py-4 left-6 bottom-6 description-shadow"
                 :class="color"
               >
-                <h4 class="font-semibold text-lg">
+                <h4 class="font-semibold md:text-lg">
                   {{ slide.title }}
                 </h4>
               </div>
@@ -102,7 +102,7 @@ const size = useWindowSize();
 
 watch(size.width, (size) => {
   itemsToShow.value = size > 1024 ? 2.5 : 1.2;
-});
+}, { immediate:true });
 
 const updateActiveSlide = (val) => {
   console.log(val);
@@ -193,7 +193,7 @@ onKeyStroke('Escape', unsetFocusedSlide);
     .carousel__pagination-item {
       @apply p-2;
       .carousel__pagination-button {
-        @apply w-16 h-4 rounded-none;
+        @apply w-10 md:w-16 h-4 rounded-none;
         &.carousel__pagination-button--active {
           @apply bg-white;
         }

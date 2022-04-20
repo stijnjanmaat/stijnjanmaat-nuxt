@@ -104,16 +104,13 @@ useHead({
 }
 
 .disco-bg {
-  @apply bg-transparent bg-no-repeat;
-  background-position: 100% 0%;
+  @apply bg-transparent bg-no-repeat bg-fixed;
+  background-position: 110% 0%;
   background-image: url("@/assets/img/disco-ball.svg");
-  background-size: clamp(200px, 100%, 70%) auto;
+  background-size: clamp(200px, 100%, 60%) auto;
   animation: discoBg 4s linear infinite;
-  * {
+  :deep(p, a, span), header {
     @apply opacity-0;
-  }
-  .disco-link {
-    @apply opacity-100;
   }
 }
 

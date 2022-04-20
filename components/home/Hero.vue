@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="text-white text-4xl md:text-5xl leading-snug md:leading-snug pt-24 pb-12">
+    <h1 class="text-white text-4xl md:text-5xl leading-snug md:leading-snug pt-16 md:pt-24 pb-12">
       Hi, I'm
       <strong>Stijn Janmaat</strong> and I create web things.
     </h1>
@@ -11,13 +11,13 @@
       Vue & Nuxt enthusiast, and overall modern Javascript fan-boy.
     </p>
 
-    <p class="text-amber-200 text-xl pb-8">
-      Also,
-      <s-link 
-        class="disco-link" 
+    <p class="text-amber-200 text-xl pb-8 disco-link-p">
+      <span>Also, </span>
+      <span 
+        class="s-link disco-link"
         @mouseover="emit('disco-link-mouse-over')" 
         @mouseleave="emit('disco-link-mouse-leave')"
-      >disco</s-link>.
+      >disco</span><span>.</span>
     </p>
 
     <p class="text-white">

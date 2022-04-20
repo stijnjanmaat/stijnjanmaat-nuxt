@@ -4,6 +4,16 @@
 
 @layer components {
   .s-link {
-    @apply underline decoration-2 underline-offset-2
+    @apply underline decoration-2 underline-offset-2;
+  }
+}
+
+@layer base {
+  * {
+    @apply antialiased;
+  }
+  
+  a {
+    @apply underline decoration-2 underline-offset-2;
   }
 }

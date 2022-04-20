@@ -8,31 +8,27 @@
         </s-container>
       </header>
 
-      <s-container>
-        <div class="flex justify-between">
-          <div class="pt-24 max-w-lg min-h-[75vh]">
-            <h1 class="font-semibold text-4xl md:text-5xl leading-snug md:leading-snug mb-6">
-              Hi, I'm Stijn Janmaat
-            </h1>
-            <p class="text-amber-200 text-xl leading-normal mb-6">
-              Interaction Designer turned Frontend Developer.
-            </p>
-            <p class="text-amber-200 text-xl leading-normal mb-12">
-              Over the years moved from product and concept development, through full stack development and growth hacking towards frontend development.
-            </p>
+      <me-photo-hero>
+        <div class="max-w-lg sm:pt-16 pb-32 sm:w-2/3">
+          <h1 class="font-semibold text-4xl leading-snug md:leading-snug mb-6">
+            Hi, I'm Stijn Janmaat
+          </h1>
+          <p class="text-amber-200 text-xl leading-normal mb-6">
+            Interaction Designer turned Frontend Developer.
+          </p>
+          <p class="text-amber-200 text-xl leading-normal mb-12">
+            Over the years moved from product and concept development, through full stack development and growth hacking towards frontend development.
+          </p>
 
-            <a
-              v-smooth-scroll
-              class="s-link text-amber-200 text-xl leading-normal flex"
-              href="#sectionFrontend"
-            >
-              Read more <div class="ml-1 text-3xl i-uil-arrow-down" />
-            </a>
-          </div>
-
-          <me-photo class="w-1/3" />
+          <a
+            v-smooth-scroll
+            class="s-link text-amber-200 text-xl leading-normal flex"
+            href="#sectionFrontend"
+          >
+            Read on <div class="ml-1 text-3xl i-uil-arrow-down" />
+          </a>
         </div>
-      </s-container>
+      </me-photo-hero>
 
       <div class="bg-gradient-to-t to-neutral-800 from-gray-600">
         <div class="section-frontend-bg bg-repeat">

@@ -28,8 +28,8 @@
 import type { MenuItemColor } from './MenuItem.vue';
 
 withDefaults(defineProps<{
-  inline: boolean,
-  color: MenuItemColor,
+  inline?: boolean,
+  color?: MenuItemColor,
 }>(), {
   inline: false,
   color: 'white',

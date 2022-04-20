@@ -248,7 +248,7 @@
             My goal was to tell about me, in a way that also tells about me. So form follows message so to say. That's why I created some playful interactions and experiment with new tech, while dicussing my experiences.
           </p>
           <p class="text-lg mb-4 text-gray-800">
-            I used Nuxt 3 beta, Vue 3 and Typescript. I experimented with how to build with Nuxt 3 framework paradigm and leveraging Vue 3's composition API.
+            I used Nuxt 3 beta, Vue 3 and Typescript. I experimented with how to build with Nuxt 3 framework paradigm and leveraging Vue 3's composition API. CSS framework Tailwind 3 helped me a great deal of making it look fresh. 
           </p>
           
           <p class="text-lg mb-4 text-gray-800">

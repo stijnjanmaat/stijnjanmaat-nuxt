@@ -20,7 +20,7 @@
       >disco</span>.
     </p>
 
-    <p class="text-white">
+    <p class="text-amber-200">
       <s-button
         :disabled="hireMeNowDisabled"
         to="/contact"
@@ -29,7 +29,7 @@
         Hire me now
       </s-button>
 
-      <span class="px-4">or</span>
+      <span class="px-4 text-xl">or</span>
       <s-button
         to="/me"
         class="mt-4"
@@ -40,17 +40,17 @@
 
     <div class="relative">
       <img
-        class="mr-16 pt-16"
+        class="mr-0 sm:mr-16 pt-16"
         src="@/assets/img/chaos-of-creation-sloppy.svg"
         alt="Chaos of Creation"
       >
       <img
-        class="absolute w-24 left-[1%] bottom-[17%] animate-wiggle"
+        class="absolute w-10 sm:w-12 md:w-24 left-[1%] bottom-[17%] animate-wiggle"
         src="@/assets/img/wrong-question-mark.svg"
         alt="Question mark"
       >
 
-      <div class="absolute w-8 top-[25%] left-[34%] animate-rotating">
+      <div class="absolute w-6 sm:w-6 md:w-8 top-[25%] left-[34%] animate-rotating">
         <img
           class="animate-hovering"
           src="@/assets/img/triangle.svg"
@@ -58,7 +58,7 @@
         >
       </div>
 
-      <div class="absolute w-16 right-[28%] top-[28%] animate-hovering">
+      <div class="absolute w-8 sm:w-12 md:w-16 right-[28%] top-[28%] animate-hovering">
         <img
           class="animate-wiggle"
           src="@/assets/img/star.svg"

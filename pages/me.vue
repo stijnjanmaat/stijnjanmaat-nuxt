@@ -26,7 +26,7 @@
               class="s-link text-amber-200 text-xl leading-normal flex"
               href="#sectionFrontend"
             >
-              Read more below <div class="ml-1 text-3xl i-uil-arrow-down" />
+              Read more <div class="ml-1 text-3xl i-uil-arrow-down" />
             </a>
           </div>
 

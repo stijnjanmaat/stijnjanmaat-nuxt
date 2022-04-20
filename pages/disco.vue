@@ -1,7 +1,10 @@
 <template>
   <div>
     <picture>
-      <img src="@/assets/img/disco-ball.png">
+      <img
+        src="@/assets/img/disco-ball.svg"
+        alt="Disco ball"
+      >
     </picture>
 
     <s-footer />

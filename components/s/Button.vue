@@ -15,7 +15,7 @@
 <script setup lang="ts">
 import { RouteLocationRaw } from 'vue-router';
 
-type ButtonColor = 'purple' | 'red' | 'orange'; 
+type ButtonColor = 'purple' | 'red' | 'orange' | 'green'; 
 
 interface Props {
   to: RouteLocationRaw
@@ -36,6 +36,8 @@ const textColor = computed(() => {
     return 'text-red-800';
   case 'orange':
     return 'text-orange-800';
+  case 'green':
+    return 'text-emerald-800';
   }
 });
 

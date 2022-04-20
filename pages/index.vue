@@ -105,9 +105,9 @@ useHead({
 
 .disco-bg {
   @apply bg-transparent bg-no-repeat;
-  background-position: 80% 150px;
-  background-image: url("@/assets/img/disco-ball.png");
-  background-size: clamp(100px, 100%, 400px) auto;
+  background-position: 100% 0%;
+  background-image: url("@/assets/img/disco-ball.svg");
+  background-size: clamp(200px, 100%, 70%) auto;
   animation: discoBg 4s linear infinite;
   * {
     @apply opacity-0;

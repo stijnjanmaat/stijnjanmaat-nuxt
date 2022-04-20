@@ -34,7 +34,7 @@ const slides = [
   {
     id: 'admin-agenda',
     title: 'Admin Agenda',
-    description: 'Next to the Client calendar app, we made an admin interface. Here the resources, availability and advisors\' skills can be managed. But mostly the admin agenda is central to the day to day workflow of our advisors. Advisors can easily review their schedule, edit appointments and access the appropriate client data.',
+    description: 'Next to the client\'s calendar app, we made an admin interface. Here the resources, availability and advisors\' skills can be managed. But mostly the admin agenda is central to the day to day workflow of the advisors. They can easily review their schedule, edit appointments and access the appropriate client data.',
     img: AdminAgendaImg,
   },
   {

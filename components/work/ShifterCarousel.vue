@@ -11,17 +11,18 @@ import ShifterGridImg from '@/assets/img/work/shifter-grid.png';
 
 const slides = [
   {
+    id: 'shift-list',
     title: 'Shift List',
-    description: 'We made many tools for customers to calculate their mortgage options, learn things about their mortgage, do the application and many, many more. I built the Vue backend, established many design patterns to consitently use Tools across Ikbenfrits\' applications. Also constributed to the PHP backend',
+    description: 'Shifter\'s planning application is designed to acommodate large organizations, with many locations, all fixed and flexible personnel. The goal is optimize the deployment of personnel and provide insight and maintain actionability when incidents occur. Among our clients were Amsterdam RAI and Roompot Vakantiehuizen. The Shift List is the main view power users use to make multi-shift changes and inspect details of shifts.',
     img: ShifterListImg,
   },
   {
-    title: 'Grid and Detail',
-    description: 'thingies',
+    id: 'shift-grid',
+    title: 'Shift Grid and Detail',
+    description: 'The Shift Grid is designed to get an overview of the staffing per location. In the pop-up shown a shift details can be reviewed and edited.',
     img: ShifterGridImg,
   },
 ];
-
 
 </script>
 

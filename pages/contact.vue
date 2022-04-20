@@ -8,7 +8,7 @@
         </s-container>
       </header>
 
-      <s-container class="pb-32">
+      <s-container class="pb-24">
         <div class="max-w-xl">
           <h1 class="text-white text-4xl md:text-5xl leading-snug md:leading-snug pt-24 mb-6 font-semibold">
             Reach out
@@ -25,7 +25,7 @@
       </s-container>
 
       <s-container class="pb-32">
-        <p class="text-white text-lg flex items-center">
+        <p class="text-white text-lg flex items-center mb-6">
           Or just&nbsp;<span class="inline-block text-xl i-uil-envelope" />&nbsp;me&nbsp;<a href="mailto:stijn@stijnjanmaat.nl">stijn@stijnjanmaat.nl</a>.
         </p>
         <p class="text-white text-lg flex">

@@ -28,6 +28,7 @@
       <s-button
         to="#"
         class="mt-4"
+        color="green"
         @click="clickSubmit"
       >
         <div class="flex items-center">

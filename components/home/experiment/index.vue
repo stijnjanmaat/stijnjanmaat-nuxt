@@ -8,9 +8,9 @@
       <div class="flex pt-24">
         <div class="bg-white flex-grow" />
         <img
-          class="max-w-sm"
-          src="@/assets/img/erlemeyer.svg"
-          alt=""
+          class="max-w-sm w-1/4"
+          src="@/assets/img/erlenmeyer.svg"
+          alt="Erlenmeyer"
         >
         <div class="bg-white flex-grow" />
       </div>
@@ -45,7 +45,7 @@
           </h3>
 
           <div class="absolute w-full bottom-12 left-0">
-            <div class="relative mx-auto max-w-lg">
+            <div class="relative mx-auto max-w-lg px-4">
               <home-experiment-explanation
                 :style="{opacity: opacityCreative}"
               >

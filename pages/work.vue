@@ -14,7 +14,7 @@
             Check out some of my work
           </h1>
           <p class="text-amber-200 text-xl leading-normal mb-10 max-w-lg">
-            Over the years moved from product and concept development, through full stack development and growth hacking towards frontend development.
+            Scroll down to find some of my projects on concept and web development as well as my education and other occupations.
           </p>
 
           <p class="pb-24 text-amber-200 text-xl leading-normal sm:flex">
@@ -248,7 +248,7 @@
             My goal was to tell about me, in a way that also tells about me. So form follows message so to say. That's why I created some playful interactions and experiment with new tech, while dicussing my experiences.
           </p>
           <p class="text-lg mb-4 text-gray-800">
-            I used Nuxt 3 beta, Vue 3 and Typescript. I experimented with how to build with Nuxt 3 framework paradigm, using the composition API.
+            I used Nuxt 3 beta, Vue 3 and Typescript. I experimented with how to build with Nuxt 3 framework paradigm and leveraging Vue 3's composition API.
           </p>
           
           <p class="text-lg mb-4 text-gray-800">

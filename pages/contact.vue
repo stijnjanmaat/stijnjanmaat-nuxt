@@ -9,13 +9,15 @@
       </header>
 
       <s-container class="pb-32">
-        <h1 class="text-white text-4xl md:text-5xl leading-snug md:leading-snug pt-24 mb-6 font-semibold">
-          Reach out
-        </h1>
+        <div class="max-w-xl">
+          <h1 class="text-white text-4xl md:text-5xl leading-snug md:leading-snug pt-24 mb-6 font-semibold">
+            Reach out
+          </h1>
 
-        <p class="text-xl leading-normal text-amber-200">
-          Think you might have cool project for me? Or is it something I said? Send me a message!
-        </p>
+          <p class="text-xl leading-normal text-amber-200">
+            Think you might have cool project for me? Or is it something I said? Send me a message!
+          </p>
+        </div>
       </s-container>
 
       <s-container class="pb-32">

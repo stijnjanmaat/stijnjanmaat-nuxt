@@ -87,7 +87,7 @@
               My leadership style revolves around responsibility, equality and inspiration. I encourage my peers to <strong>think critically</strong> about what we're working on, having a constant discussion is vital to continuous improvement of our product. This freedom to decide what's next also means it's <strong>encouraged to take responsibility</strong>. But most importantly: by having a very <strong>clear purpose</strong> in mind and believing we can achieve the goals associated, I'd like to put energy in inspiring the team. To work for the common goals, and for eachother.
             </p>
             <p class="mt-6 text-xl leading-normal">
-              This is also why I'm a <strong>big fan of Holacracy</strong>. My best experiences were with self governing teams. Everybody had their own expertises, roles and responsbilities, but have one purpose and work on one common goal. 
+              This is also why I'm a <strong>big fan of Holacracy</strong>. My best experiences were with self governing teams. Everybody had their own expertises, roles and responsibilities, but have one purpose and work on one common goal. 
             </p>
           </div>
 
@@ -122,18 +122,15 @@
       </div>
     </div>
 
-    <div class="bg-gray-600">
-      <div class="section-full-stack min-h-[70vh]">
+    <div class="bg-slate-600">
+      <div class="section-full-stack min-h-[80vh]">
         <s-container>
-          <div class="max-w-md text-white">
+          <div class="ml-auto mr-0 max-w-xl text-white text-right">
             <h3 class="text-4xl font-semibold pt-16">
               Full Stack Experience
             </h3>
             <p class="mt-12 text-xl leading-normal">
-              Altough I have specialized in frontend, I started off with playing around with <strong>PHP</strong> and <strong>Wordpress</strong> 11 years ago. It quickly turned into my profession. Past couple of years I developed my skills in <strong>Node.js</strong> and <strong>Ruby on Rails</strong>. 
-            </p>
-            <p>
-              Worked a lot with <strong>MySQL</strong>, <strong>Redis</strong>.
+              Although I have specialized in frontend, I started off with playing around with <strong>PHP</strong> and <strong>Wordpress</strong> 11 years ago. It quickly turned into my profession. Past couple of years I developed my skills in <strong>Node.js</strong> and <strong>Ruby on Rails</strong>. In backend projects I also worked a lot with <strong>MySQL</strong> and <strong>Redis</strong>.
             </p>
             <p class="mt-6 text-xl leading-normal">
               As most senior developer at Frits, I also gained experience in devops. I (co)created and maintained complex CI pipelines in <strong>Gitlab CI</strong> and worked intensively with <strong>Docker</strong> and <strong>k8s</strong>.
@@ -142,24 +139,32 @@
         </s-container>
       </div>
     </div>
-  
-
-    <div>
-      philosophy
-      don't build everything yourself
-      educated cuts
-      balance in speed and quality
-
-      leadership
-      lead by example
-      inspiration
-      getting energy from the common cause
-
-      impact
-
-      future
-
-      develop myself in educating, strategic achieving goals
+    
+    <div class="bg-gradient-to-t from-cyan-300 to-sky-600">
+      <div class="section-future min-h-[70vh]">
+        <s-container class="relative">
+          <div class="max-w-md text-white pb-32 md:pb-64">
+            <h3 class="text-4xl font-semibold pt-16">
+              My Future
+            </h3>
+            <p class="mt-12 text-xl leading-normal">
+              I like to be involved with both the early creative phase of product development, as well as building and execution. So in my new occupation I'm looking for both.
+            </p>
+            <p class="mt-6 text-xl leading-normal">
+              As mentioned, I am motivated by a compelling purpose. This can be related to societal issues, challenging unfair status quos, sustainability... As long as i can contribute directly and <strong>make impact</strong>.
+            </p>
+            <p class="mt-6 text-xl leading-normal lg:mb-4">
+              The coming years I like to develop my skills in education and sharing knowledge and learning about strategic product development.
+            </p>
+            
+            <div class="animate-rotating absolute right-[10%] bottom-[40%] sm:right-[15%] md:bottom-[55%] lg:right-12 lg:bottom-[80%] w-1/12">
+              <img
+                src="@/assets/img/moon.svg"
+              >
+            </div>
+          </div>
+        </s-container>
+      </div>
     </div>
 
     <s-footer />
@@ -184,31 +189,31 @@ onMounted(() => {
 
 <style scoped>
   
-  .section-frontend-bg {
-    background-image: url('@/assets/img/starry-bg.svg');
-    background-size: 50%;
-  }
+.section-frontend-bg {
+  background-image: url('@/assets/img/starry-bg.svg');
+  background-size: 50%;
+}
 
-  .section-frontend {
-    background-image: url('@/assets/img/frontend-logos.svg');
-    background-size: 70% 80%;
-    background-position-y: center;
-    background-position-x: 85%;
+.section-frontend {
+  background-image: url('@/assets/img/frontend-logos.svg');
+  background-size: 70% 80%;
+  background-position-y: center;
+  background-position-x: 85%;
 
-    text-shadow:
-      1px 1px rgba(38,38,38),
-      1px 2px rgba(38,38,38),
-      2px 1px rgba(38,38,38),
-      2px 2px rgba(38,38,38);
-  }
+  text-shadow:
+    1px 1px theme('colors.neutral.800'),
+    1px 2px theme('colors.neutral.800'),
+    2px 1px theme('colors.neutral.800'),
+    2px 2px theme('colors.neutral.800');
+}
 
-  .section-team {
-    background-image: url('@/assets/img/growing-grass.svg');
-    background-size: 45%;
-    background-position-y: calc(100% + 3px);
-    background-position-x: 70%;
-    background-repeat: no-repeat;
-  }
+.section-team {
+  background-image: url('@/assets/img/growing-grass.svg');
+  background-size: 45%;
+  background-position-y: calc(100% + 3px);
+  background-position-x: 70%;
+  background-repeat: no-repeat;
+}
 
 @keyframes hovering {
   0%, 100% {
@@ -239,9 +244,41 @@ onMounted(() => {
   background-position-y: calc(100% + 50px);
 
   text-shadow:
-      1px 1px white,
-      1px 2px white,
-      2px 1px white,
-      2px 2px white;
+    1px 1px white,
+    1px 2px white,
+    2px 1px white,
+    2px 2px white;
+}
+
+@keyframes rotating {
+  0% { transform: rotate(0deg) }
+  50% { transform: rotate(180deg) }
+  100% { transform: rotate(360deg) }
+}
+
+.section-full-stack {
+  background-image: url('@/assets/img/layers.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 0%;
+  background-position-y: 100%;
+}
+
+.animate-rotating {
+  animation: rotating 37s linear infinite;
+}
+
+.section-future {
+  background-image: url('@/assets/img/future-of-creation.svg');
+  background-repeat: no-repeat;
+  background-size: 75%;
+  background-position-x: 60%;
+  background-position-y: calc(100% + 1px);
+
+  text-shadow:
+    1px 1px theme('colors.sky.700'),
+    1px 2px theme('colors.sky.700'),
+    2px 1px theme('colors.sky.700'),
+    2px 2px theme('colors.sky.700');
 }
 </style>

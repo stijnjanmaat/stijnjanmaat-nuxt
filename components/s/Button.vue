@@ -41,7 +41,7 @@ const textColor = computed(() => {
 
 </script>
 
-<style>
+<style scoped>
 .s-button:before {
   content: "";
   position: absolute;

@@ -22,6 +22,12 @@ Start the development server on http://localhost:3344
 yarn dev -o
 ```
 
+Convenient push and deploy to Heroku:
+
+```bash
+make push
+```
+
 ### Build & test
 
 Build and test in one command:
@@ -37,5 +43,3 @@ Build the application for production:
 ```bash
 yarn build
 ```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment).

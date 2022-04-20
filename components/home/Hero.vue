@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="text-white text-4xl md:text-5xl leading-snug md:leading-snug pt-16 md:pt-24 pb-12">
+    <h1 class="text-white text-4xl md:text-5xl leading-snug md:leading-snug pt-16 md:pt-24 pb-12 max-w-2xl">
       Hi, I'm
       <strong>Stijn Janmaat</strong> and I create web things.
     </h1>
@@ -12,12 +12,12 @@
     </p>
 
     <p class="text-amber-200 text-xl pb-8 disco-link-p">
-      <span>Also, </span>
+      Also, 
       <span 
         class="s-link disco-link"
         @mouseover="emit('disco-link-mouse-over')" 
         @mouseleave="emit('disco-link-mouse-leave')"
-      >disco</span><span>.</span>
+      >disco</span>.
     </p>
 
     <p class="text-white">
@@ -42,16 +42,19 @@
       <img
         class="mr-16 pt-16"
         src="@/assets/img/chaos-of-creation-sloppy.svg"
+        alt="Chaos of Creation"
       >
       <img
         class="absolute w-24 left-[1%] bottom-[17%] animate-wiggle"
         src="@/assets/img/wrong-question-mark.svg"
+        alt="Question mark"
       >
 
       <div class="absolute w-8 top-[25%] left-[34%] animate-rotating">
         <img
           class="animate-hovering"
           src="@/assets/img/triangle.svg"
+          alt="Triangle"
         >
       </div>
 
@@ -59,6 +62,7 @@
         <img
           class="animate-wiggle"
           src="@/assets/img/star.svg"
+          alt="Star"
         >
       </div>
     </div>

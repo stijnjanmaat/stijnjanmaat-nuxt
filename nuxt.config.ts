@@ -31,8 +31,7 @@ export default defineNuxtConfig({
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      // TODO: indexing disabled
-      { hid: 'robots', name: 'robots', content: 'no-index, no-follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1' },
+      { hid: 'robots', name: 'robots', content: 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1' },
       { hid: 'og:type', property: 'og:type', content: 'website' },
       { hid: 'og:site_name', property: 'og:site_name', content: 'stijnjanmaat.nl' },
     ],

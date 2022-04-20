@@ -109,7 +109,7 @@ useHead({
   background-image: url("@/assets/img/disco-ball.svg");
   background-size: clamp(200px, 100%, 60%) auto;
   animation: discoBg 4s linear infinite;
-  :deep(p, a, span), header {
+  :deep(p, a, span, img), header, h1, img {
     @apply opacity-0;
   }
 }

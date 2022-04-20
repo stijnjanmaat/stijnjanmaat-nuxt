@@ -46,7 +46,7 @@
                   Elegant Frontend Solutions
                 </h3>
                 <p class="mt-12 text-xl leading-normal">
-                  Over 6 years of professional experience in <strong>Vue</strong>, <strong>Nuxt</strong> and <strong>Javascript ES6</strong>. Touched upon all things web and browser: technical seo, privacy measures and compliance, performance, security, responsiveness, browser compatibility, tracking etcetera.
+                  Over 6 years of professional experience in <strong>Vue</strong>, <strong>Nuxt</strong> and modern <strong>Javascript</strong>. Touched upon all things web and browser: technical seo, privacy measures and compliance, performance, security, responsiveness, browser compatibility, tracking etcetera.
                 </p>
               </div>
             </s-container>

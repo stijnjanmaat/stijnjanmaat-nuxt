@@ -4,6 +4,13 @@
     :class="{flex: inline}"
   >
     <s-menu-item
+      v-if="showHome"
+      to="/"
+      :color="color"
+    >
+      <span class="inline-block i-uil-home-alt text-xl" />
+    </s-menu-item>
+    <s-menu-item
       to="/me"
       :color="color"
     >
@@ -28,9 +35,11 @@
 import type { MenuItemColor } from './MenuItem.vue';
 
 withDefaults(defineProps<{
+  showHome?: boolean,
   inline?: boolean,
   color?: MenuItemColor,
 }>(), {
+  showHome: false,
   inline: false,
   color: 'white',
 });

@@ -2,6 +2,7 @@
   <footer class="bg-white">
     <s-container class="pb-24 pt-16">
       <s-menu
+        show-home
         class="pb-12"
         color="gray"
         inline

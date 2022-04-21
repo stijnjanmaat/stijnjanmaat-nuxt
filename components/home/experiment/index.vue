@@ -52,7 +52,7 @@
               <home-experiment-explanation
                 :style="{opacity: opacityCreative, zIndex: zIndexCreative}"
               >
-                I like contributing to the creative process at the refinement of an idea. I strongly believe in co-creation, as the whole team is involved from the start. <s-link to="/work/#sectionDesign">More on Interaction</s-link>.
+                I like contributing to the creative process at the refinement of an idea. I strongly believe in co-creation, as the whole team is involved from the start. <s-link to="/me/#sectionDesign">More on Interaction</s-link>.
               </home-experiment-explanation>
               <home-experiment-explanation
                 :style="{opacity: opacityInteraction, zIndex: zIndexInteraction}"
@@ -62,7 +62,7 @@
               <home-experiment-explanation
                 :style="{opacity: opacityDesignDevelopment, zIndex: zIndexDesignDevelopment}"
               >
-                Ideation and execution should go hand in hand. It is very powerful to have all skills needed present, working side by side. <s-link to="/work/#sectionTeamWork">More on Team Work</s-link>.
+                Ideation and execution should go hand in hand. It is very powerful to have all skills needed present, working side by side. <s-link to="/me/#sectionTeamWork">More on Team Work</s-link>.
               </home-experiment-explanation>
               <home-experiment-explanation
                 :style="{opacity: opacityIdealistic, zIndex: zIndexIdealistic}"

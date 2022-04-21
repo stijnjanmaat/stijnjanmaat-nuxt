@@ -108,7 +108,14 @@
             Here's my resume
           </h3>
           <p>
-            <s-button to="/resume-stijn-janmaat-202204.pdf">Download PDF 
+            <s-button
+              tag="a"
+              to="/resume-stijn-janmaat-202204.pdf"
+              target="_blank"
+            >
+              <div class="flex items-center">
+                <span class="i-uil-file-download inline-block mr-1 text-2xl" />Download PDF
+              </div>
             </s-button>
           </p>
         </div>

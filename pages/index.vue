@@ -25,6 +25,8 @@
     
     <home-work />
 
+    <home-resume />
+
     <s-footer />
   </div>
 </template>

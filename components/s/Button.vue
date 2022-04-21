@@ -1,31 +1,56 @@
 <template>
-  <nuxt-link
-    :to="disabled ? '#' : to"
-    class="relative s-button inline-block"
-  >
-    <span
-      class="relative inline-block px-6 py-4 bg-white text-xl font-bold z-1"
-      :class="textColor"
+  <span class="contents">
+    <a
+      v-if="isA"
+      v-bind="$attrs"
+      :href="to"
+      class="relative s-button inline-block"
     >
-      <slot />
-    </span>
-  </nuxt-link>
+      <span
+        class="relative inline-block px-6 py-4 bg-white text-xl font-bold z-1"
+        :class="textColor"
+      >
+        <slot />
+      </span>
+    </a>
+    
+    <nuxt-link
+      v-else
+      v-bind="$attrs"
+      :to="disabled ? '#' : to"
+      class="relative s-button inline-block"
+    >
+      <span
+        class="relative inline-block px-6 py-4 bg-white text-xl font-bold z-1"
+        :class="textColor"
+      >
+        <slot />
+      </span>
+    </nuxt-link>
+  </span>
 </template>
 
 <script setup lang="ts">
 import { RouteLocationRaw } from 'vue-router';
 
+type Tag = 'a' | 'nuxt-link'; 
 type ButtonColor = 'purple' | 'red' | 'orange' | 'green'; 
 
 interface Props {
+  tag?: Tag
   to: RouteLocationRaw
   color?: ButtonColor
   disabled?: boolean
 }
 
 const props = withDefaults(defineProps<Props>(), {
+  tag: 'nuxt-link',
   disabled: false,
   color: 'purple',
+});
+
+const isA = computed(() => {
+  return props.tag === 'a';
 });
 
 const textColor = computed(() => {

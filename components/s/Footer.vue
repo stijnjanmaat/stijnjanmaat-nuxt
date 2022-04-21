@@ -7,9 +7,9 @@
         inline
       />
 
-      <p class="text-gray-500 flex">
-        Made with&nbsp;<span class="inline-block text-xl i-uil-heart" />&nbsp;by&nbsp;
-        <strong>Stijn Janmaat</strong>
+      <p class="text-gray-500 flex flex-wrap">
+        <span>Made with&nbsp;</span><span class="inline-block text-xl i-uil-heart" /><span class="whitespace-pre-line">&nbsp;by
+          <strong>Stijn Janmaat</strong></span>
       </p>
     </s-container>
   </footer>

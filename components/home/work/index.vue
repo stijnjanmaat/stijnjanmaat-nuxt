@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-white overflow-hidden py-24">
-    <s-container class="bg-gradient-to-b to-rose-600 from-pink-600 rotate-1 px-24 pt-20 pb-36 md:pb-24 relative">
+  <div class="bg-white overflow-hidden py-12">
+    <s-container class="bg-gradient-to-b to-rose-600 from-pink-600 rotate-1 px-12 sm:px-24 pt-20 pb-36 md:pb-24 relative">
       <img
         class="absolute -bottom-4 right-6 md:right-16 w-32 sm:w-48 md:w-52"
         src="@/assets/img/work-tent.svg"

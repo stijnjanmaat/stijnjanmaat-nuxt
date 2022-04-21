@@ -1,0 +1,2 @@
+Sitemap: https://stijnjanmaat.nl/sitemap.xml
+UserAgent: *

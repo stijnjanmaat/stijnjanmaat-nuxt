@@ -108,7 +108,7 @@
             Here's my resume
           </h3>
           <p>
-            <s-button to="@/static/resume-stijn-janmaat-2022-04.pdf">Download PDF 
+            <s-button to="/resume-stijn-janmaat-202204.pdf">Download PDF 
             </s-button>
           </p>
         </div>
@@ -142,7 +142,7 @@
             </li>
             <li class="mb-3">
               <h4 class="flex">
-                <span class="inline-block w-32 font-semibold flex-none">2010</span>
+                <span class="inline-block w-32 font-semibold flex-none">2010 - 2011</span>
                 <span>Participation in the YES!Delft course Writing a Business Plan</span>
               </h4>
             </li>
@@ -165,7 +165,7 @@
               </h4>
               <p class="flex">
                 <span class="inline-block w-32 flex-none" />
-                <span class="text-base">Profile Natuur & Techniek</span>
+                <span class="text-base">Profile Natuur & Techniek + Economics & Latin</span>
               </p>
             </li>
           </ul>
@@ -252,11 +252,11 @@
           </p>
           
           <p class="text-lg mb-4 text-gray-800">
-            Please note this project is not production ready, but merely a simple, rough show case.
+            Please note this project is not production ready, but merely a simple, rough try out.
           </p>
 
-          <p class="flex text-lg mb-4 text-gray-800">
-            <strong>stijnjanmaat.nl</strong>&nbsp;is open source. Check it out at&nbsp;<s-link
+          <p class="flex text-lg mb-4 text-gray-800 flex-wrap">
+            <span class="whitespace-pre-line"><strong>stijnjanmaat.nl</strong>&nbsp;is open source. Check it out at&nbsp;</span><s-link
               to="https://github.com/stijnjanmaat/stijnjanmaat-nuxt"
               class="flex"
             ><span class="inline-block text-2xl i-uil-github mr-1" />GitHub</s-link>.
